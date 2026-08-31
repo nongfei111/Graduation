@@ -1,0 +1,55 @@
+# ===== 密码本 / 账号密码（敏感，勿上传）=====
+docs/安全/
+docs/云服务器实例信息_勿存密码.md
+docs/云端/
+
+# ===== 密钥（SSH / Token / 环境变量）=====
+密钥/
+*.pem
+*.key
+*.ppk
+.env
+.env.*
+cloud_server/.env.example
+
+# ===== 人脸数据（隐私）=====
+data/faces/
+data/models/*.pkl
+data/test_images/
+faces/
+
+# ===== 含明文密码的脚本/初始化文件（勿上传）=====
+cloud_server/init_db.py
+cloud_server/init_families.py
+cloud_server/init_families.sh
+cloud_server/debug_family.py
+cloud_server/fix_family_table.py
+cloud_server/mysql_reset.sh
+cloud_server/reset_password.sh
+cloud_server/reset_password2.sh
+cloud_server/reset_admin_password.sh
+cloud_server/database/init.sql
+data/database/init.sql
+data/database/init_mysql.sql
+docs/deploy_with_password.bat
+
+# ===== 本机配置 =====
+local.properties
+app/local.properties
+
+# ===== 构建产物 / IDE / 缓存 =====
+.gradle/
+.idea/
+.kotlin/
+build/
+app/build/
+__pycache__/
+*.pyc
+*.pyo
+*.class
+.cxx/
+*.apk
+*.aab
+
+# ===== Trae IDE 本地数据 =====
+.trae/

@@ -1,0 +1,61 @@
+{
+  "system": {
+    "name": "CLAUDE 智能门铃系统",
+    "version": "1.0.0",
+    "device": "Raspberry Pi 5",
+    "device_id": "raspi_doorbell_001"
+  },
+  "camera": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "flip_h": false,
+    "flip_v": false
+  },
+  "face_detection": {
+    "model_path": "assets/models/ultraface.onnx",
+    "confidence_threshold": 0.7,
+    "input_size": [320, 240]
+  },
+  "face_recognition": {
+    "model_path": "assets/models/mobilefacenet.onnx",
+    "embedding_size": 128,
+    "threshold": 0.6
+  },
+  "database": {
+    "path": "data/database/doorbell.db",
+    "max_faces_per_person": 20
+  },
+  "display": {
+    "width": 1024,
+    "height": 600,
+    "fullscreen": true
+  },
+  "alert": {
+    "stranger_timeout": 30,
+    "buzzer_pin": 17,
+    "button_pin": 27
+  },
+  "members": {
+    "max_count": 20
+  },
+  "network": {
+    "server_host": "8.134.196.56",
+    "server_port": 5000,
+    "mqtt_broker": "broker.emqx.io",
+    "mqtt_port": 1883,
+    "mqtt_topic_unlock": "doorbell/unlock",
+    "mqtt_topic_status": "doorbell/status",
+    "mqtt_topic_visitor": "doorbell/visitor",
+    "mqtt_topic_alert": "doorbell/alert",
+    "heartbeat_interval": 30,
+    "command_poll_interval": 5
+  },
+  "motor": {
+    "type": "28BYJ-48",
+    "pins": [1, 7, 8, 25],
+    "steps_per_rev": 2048,
+    "unlock_angle": 90,
+    "unlock_delay": 0.002
+  }
+}

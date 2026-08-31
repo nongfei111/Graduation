@@ -1,0 +1,39 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Microsoft YaHei
+skinparam defaultFontSize 20
+skinparam ArrowThickness 2
+skinparam ParticipantPadding 12
+skinparam BoxPadding 8
+skinparam Padding 6
+skinparam SequenceMessageAlign center
+skinparam MaxMessageSize 80
+hide footbox
+
+actor 用户 as U
+participant "Android APP" as APP
+participant "云端 API" as API
+participant "MQTT Broker" as MQ
+participant "树莓派设备" as PI
+
+U -> APP: 点击“开锁”
+APP -> API: POST /api/control/unlock\nAuthorization: Bearer JWT
+API -> API: 写入命令记录\n(MySQL: status=pending)
+
+alt MQTT 可用（主通道）
+  API -> MQ: publish cmd\ndoorbell/{device_id}/cmd
+  MQ -> PI: cmd 下发（subscribe）
+  PI -> PI: 执行开锁\n(GPIO/电机)
+  PI -> API: POST /api/device/command_result\n上报执行结果
+  API -> API: 更新命令状态\nexecuted/failed
+else MQTT 不可用（兜底：心跳轮询）
+  PI -> API: POST /api/device/heartbeat\n拉取待执行命令
+  API --> PI: 返回 pending 命令\n(HTTP 响应)
+  PI -> PI: 执行开锁\n(GPIO/电机)
+  PI -> API: POST /api/device/command_result\n上报执行结果
+  API -> API: 更新命令状态\nexecuted/failed
+end
+
+API --> APP: 返回“命令已下发/状态可查询”
+APP --> U: 提示：成功/失败
+@enduml

@@ -1,0 +1,35 @@
+[Unit]
+Description=CLAUDE Smart Doorbell Cloud Server
+Documentation=https://github.com/your-repo/smart-doorbell
+After=network.target mysqld.service redis.service
+Wants=mysqld.service redis.service
+
+[Service]
+Type=simple
+User=smart_doorbell
+Group=smart_doorbell
+WorkingDirectory=/home/smart_doorbell
+Environment="PATH=/home/smart_doorbell/venv/bin"
+EnvironmentFile=/home/smart_doorbell/.env
+ExecStart=/home/smart_doorbell/venv/bin/python server/app.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=smart-doorbell
+
+# 资源限制
+LimitNOFILE=65535
+Nice=-5
+IOSchedulingClass=realtime
+IOSchedulingPriority=4
+
+# 安全选项
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/home/smart_doorbell/logs /home/smart_doorbell/uploads
+
+[Install]
+WantedBy=multi-user.target

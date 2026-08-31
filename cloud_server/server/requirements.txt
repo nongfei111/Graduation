@@ -1,0 +1,33 @@
+# CLAUDE 智能门铃系统 - 服务器端 Python 依赖
+# 适用于云服务器部署
+
+# Web 框架
+Flask==2.0.3
+Flask-Cors==5.0.0
+Flask-JWT-Extended==4.4.2
+
+# 数据库
+PyMySQL==1.0.2
+
+# 缓存/消息队列
+redis==4.3.6
+
+# 工具库
+requests==2.27.1
+Pillow==8.4.0
+python-dotenv==0.20.0
+
+# 密码加密
+Werkzeug==2.0.3
+bcrypt==4.0.1
+
+# 日志
+python-json-logger>=2.0.0
+
+# MQTT
+paho-mqtt==1.6.1
+
+# WebSocket 支持（可选）
+flask-socketio>=5.3.0
+python-socketio>=5.9.0
+python-engineio>=4.7.0

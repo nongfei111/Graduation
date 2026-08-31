@@ -1,0 +1,1434 @@
+Total paragraphs: 1423
+================================================================================
+[P0] Normal | big data and cognitive computing
+[P1] Body Text | (empty)
+[P2] Body Text | (empty)
+[P3] Normal | Review
+[P4] Title | Face Liveness Detection Using Artificial Intelligence Techniques: A Systematic Literature Review and Future Directions
+[P5] Heading 1 | Smita Khairnar 1,2,*, Shilpa Gite 1,*, Ketan Kotecha 1 and Sudeep D. Thepade 2
+[P6] Body Text | (empty)
+[P7] Body Text | (empty)
+[P8] Body Text | (empty)
+[P9] Body Text | (empty)
+[P10] Body Text | (empty)
+[P11] Body Text | (empty)
+[P12] Body Text | (empty)
+[P13] Body Text | (empty)
+[P14] Body Text | (empty)
+[P15] Body Text | (empty)
+[P16] Body Text | (empty)
+[P17] Body Text | (empty)
+[P18] Body Text | (empty)
+[P19] Body Text | (empty)
+[P20] Body Text | (empty)
+[P21] Body Text | (empty)
+[P22] Body Text | (empty)
+[P23] Body Text | (empty)
+[P24] Body Text | (empty)
+[P25] Body Text | (empty)
+[P26] Body Text | (empty)
+[P27] Body Text | (empty)
+[P28] Normal | Citation: Khairnar, S.; Gite, S.; Kotecha, K.; Thepade, S.D. Face Liveness Detection Using Artificial Intelligence Techniques: A Systematic Literature Review and Future Directions. Big Data Cogn.
+[P29] Normal | Comput. 2023, 7, 37. https://doi.org/
+[P30] Normal | 10.3390/bdcc7010037
+[P31] Body Text | (empty)
+[P32] Normal | Received: 9 December 2022
+[P33] Normal | Revised: 28 January 2023
+[P34] Normal | Accepted: 3 February 2023
+[P35] Normal | Published: 17 February 2023
+[P36] Body Text | (empty)
+[P37] Normal | Copyright: © 2023 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/).
+[P38] Normal | 1	Department of Artificial Intelligence and Machine Learning, Symbiosis Centre for Applied Artificial Intelligence (SCAAI), Symbiosis Institute of Technology, Symbiosis International (Deemed) University (SIU), Lavale, Pune 412115, India
+[P39] Normal | 2	Department of Computer Engineering, Pimpri Chinchwad College of Engineering, SPPU, Pune 411044, India
+[P40] Normal | *	Correspondence: chavansmita31@gmail.com (S.K.); shilpa.gite@sitpune.edu.in (S.G.)
+[P41] Body Text | (empty)
+[P42] Normal | Abstract: Biometrics has been evolving as an exciting yet challenging area in the last decade. Though face recognition is one of the most promising biometrics techniques, it is vulnerable to spoofing threats. Many researchers focus on face liveness detection to protect biometric authentication systems from spoofing attacks with printed photos, video replays, etc. As a result, it is critical to investigate the current research concerning face liveness detection, to address whether recent advancements can give solutions to mitigate the rising challenges. This research performed a systematic review using the PRISMA approach by exploring the most relevant electronic databases. The article selection process follows preset inclusion and exclusion criteria. The conceptual analysis examines the data retrieved from the selected papers. To the author, this is one of the foremost systematic literature reviews dedicated to face-liveness detection that evaluates existing academic material published in the last decade. The research discusses face spoofing attacks, various feature extraction strategies, and Artificial Intelligence approaches in face liveness detection. Artificial intelligence-based methods, including Machine Learning and Deep Learning algorithms used for face liveness detection, have been discussed in the research. New research areas such as Explainable Artificial Intelligence, Federated Learning, Transfer learning, and Meta-Learning in face liveness detection, are also considered. A list of datasets, evaluation metrics, challenges, and future directions are discussed. Despite the recent and substantial achievements in this field, the challenges make the research in face liveness detection fascinating.
+[P43] Body Text | (empty)
+[P44] Normal | Keywords: artificial intelligence (AI); domain adaptation; explainable AI (XAI); face liveness detection (FLD)
+[P45] Body Text | (empty)
+[P46] Body Text | (empty)
+[P47] Heading 1 | Introduction
+[P48] Body Text | Biometric authentication has consistently outperformed conventional password-based authentication schemes [1]. Personal identification was limited in prehistoric times. Today, computer vision and biometrics can distinguish people without credentials or artifacts [2]. Biometrics can identify people instead of their affiliations, belongings, or confidential information. The need for accurate and machine-based identification led us to biometrics, which uses technology to speed up the process of identifying and authenticating people. The printed IDs have been replaced with biometric IDs, which allow for proof of ‘who you are’ without carrying a card or other document [3].
+[P49] Body Text | Verification is a crucial step in granting authorized users access to the resources. Conventional authentication solutions, which include a PIN, card, and password, cannot distinguish between legitimate users and impostors who accessed the system fraudu- lently [1,2]. There are numerous chances of forgetting the password/PIN or losing or misplacing the card. A biometric system is a device that enables the automatic identifica- tion of an individual. There is no need to memorize a password, card, or PIN code because the biometric authentication system is simple to use [4].
+[P50] Body Text | (empty)
+[P51] Body Text | (empty)
+[P52] Body Text | (empty)
+[P53] Body Text | (empty)
+[P54] Normal | Big Data Cogn. Comput. 2023, 7, 37. https://doi.org/10.3390/bdcc7010037	https://www.mdpi.com/journal/bdcc
+[P55] Normal | (empty)
+[P56] Body Text | (empty)
+[P57] Body Text | (empty)
+[P58] Body Text | Biometrics have been intensively researched for their automation, accessibility, and precision in meeting the increasing security demands of our daily life. As the technology has evolved through monitoring crime identification and forensics, it is a machine that analyzes human individuals’ physiological and behavioral characteristics [5] to classify them uniquely. As per a report by (www.statista.com (accessed on 16 January 2023)), the market of contactless biometrics would reach 37.1 billion USD whereas, by 2028, the face-based biometric recognition market would reach USD 12.11 billion due to promising applications in diverse categories, as given in the “Facial Recognition Business” report [6]. Biometrics has been effectively implemented in several areas where security is a top priority. For instance, personal identity cards for airport check-in and check-out, confidential data from unauthorized individuals, and credit card validation.
+[P59] Body Text | Several biometric features, including fingerprint, iris, palm print, and face, are utilized for recognition and authentication. Face-based authentication provides more secure con- tactless authentication of the user than fingerprints and iris. Table 1 exhibits numerous facial biometric detection application domains.
+[P60] Body Text | (empty)
+[P61] Normal | Table 1. Several application domains for facial biometric detection.
+[P62] Body Text | (empty)
+[P63] Normal | Application Domain	Usage
+[P64] Body Text | (empty)
+[P65] Normal | Security and Law enforcement	Identify and track criminals, and accelerate
+[P66] Normal | Customer verifications through eKYC, used in the authentication of banking applications,
+[P67] Normal | (empty)
+[P68] Normal | Banking and Retail
+[P69] Body Text | (empty)
+[P70] Body Text | (empty)
+[P71] Body Text | (empty)
+[P72] Normal | Health Sector
+[P73] Body Text | (empty)
+[P74] Body Text | (empty)
+[P75] Normal | Immigration and border checks
+[P76] Normal | Cardless ATM Transactions, online account creations, and digital payments such as apple pay [7,8]
+[P77] Normal | Detecting genetic disease, tracking patient’s effect of medications, and Health insurance records management [9]
+[P78] Normal | Face recognition for identity checks is implemented at various airports in European countries [10]
+[P79] Normal | (empty)
+[P80] Normal | Campus Security, attendance monitoring, and increasing learning engagement [11]
+[P81] Normal | FaceID in smartphones such as Apple, Samsung, Motorola, and OnePlus [12]
+[P82] Body Text | (empty)
+[P83] Body Text | However, one of the biometric recognition systems’ most significant challenges is deceptive identification, widely known as a spoofing attack [13]. Submitting a facial artifact of a legitimate user could easily construct using a person’s face photos or videos from a “public” social media platform; an impostor can quickly access an insecure face recognition system. In general, also referred to as presentation attacks, these are straightforward, easy to implement, and capable of fooling face recognition (FR) systems and providing access to unauthorized users. These are becoming critical threats in advanced biometric authentication systems. Effective face liveness detection systems are increasingly attracting more attention in the research community, and several challenges make it difficult.
+[P84] List Paragraph | Significance and Relevance
+[P85] Body Text | A few biometric traits evolved as the field progressed and occasionally disappeared. To be sure, face recognition is one biometric characteristic that has stood the test of time. Face characteristics are distinctive. Face-based authentication offers a more reliable yet contactless user identity than iris and fingerprint scanning. Face biometrics, which provides a secure identity and forms the basis of an inventive biometric system, has thus emerged as the preferred study area. However, printed face images or other artifacts can be used to fake invader challenges on face biometric systems, making them highly vulnerable. Spoofed
+[P86] Body Text | (empty)
+[P87] Body Text | (empty)
+[P88] Body Text | (empty)
+[P89] Body Text | faces can stop the face recognition system from working correctly. Various researchers concentrate on identifying facial liveness to prevent attacks on the biometric system.
+[P90] Body Text | Therefore, it is crucial to categorize the current research on the biometric of Face liveness detection to address how growing technologies might provide explanations to lower the emerging hazards. Facial recognition-based applications have made tremendous progress due to artificial intelligence (AI) techniques. Deep learning has advanced in recent years [14–16]. The use of artificial neural networks or convolutional neural networks (CNNs) in many computer vision tasks [17–19] has been extensively studied [20], especially with the advancement of robust hardware and enormous data sets. Image categorization and object detection were successfully solved using CNNs [21]. The existing body of literature on Face liveness detection concentrates on advances in hardware and software and various categorization methods employing ML- and DL-based methodologies. It is essential to do a comparative examination of these procedures based on several assessment criteria. It is necessary to thoroughly examine the pertinent articles and academic publications to understand what research has been directed toward biometric and face liveness detection. This study seeks to provide information on a range of datasets, performance metrics, face spoofing attacks, and methods for detecting the liveness of a face.
+[P91] List Paragraph | Evolution of Face Biometric Liveness Authentication
+[P92] Body Text | Fingerprints and other biometric features were used in previous biometric identifi- cation research. Semi-automated facial recognition systems that were distinctive to each person were initially proposed in 1988. Early in 2010, a face-liveness detecting algorithm was created. Since 2013, Face Liveness Detection (FLD) research has extensively used machine learning (ML) technologies.
+[P93] Body Text | The potential of ML to forecast and classify data is a key justification for using these algorithms. The face-liveness identification techniques include logistic regression, SVM, AdBoost, and Random Forest. The progress of face biometric authentication is seen in Figure 1. Huge volumes of information are processed using deep learning (DL) algorithms. The researchers started utilizing deep learning technology when facial liveness detection algorithms were introduced. Researchers have adopted DL methods for face liveness identification because they offer superior features to conventional handmade features. Some academics began working on the pre-trained networks used for face liveness detection, including convolutional neural networks (CNN), ResNet50, Inception model, VGG16, VGG19, GoogleNet, and AlexNet [20,22,23].
+[P94] Body Text | (empty)
+[P95] Body Text | (empty)
+[P96] Normal | Figure 1. Progression of face liveness detection systems.
+[P97] Normal | (empty)
+[P98] Body Text | (empty)
+[P99] Body Text | (empty)
+[P100] Body Text | To uncover research trends and gaps in face liveness detection on face recognition (FR) systems, a systematic literature review (SLR) is necessary. This paper critically examines existing studies on face liveness detection and uses insights to develop new directions to achieve this goal.
+[P101] List Paragraph | Prior Research
+[P102] Body Text | Very few systematic literature review (SLR) papers are available on face liveness de- tection as per the authors’ knowledge. One of the most recent review papers based on face anti-spoofing methods with generic consumer devices (RGB cameras) was by Ming et al. [24]. In this work, the authors discussed the typology of PAD methods, various databases available for 2D and 3D attacks, key obstacles, evolutions, and recent develop- ments in face liveness detection and prospects. To the author’s knowledge, this work gives valuable insight to researchers interested in using face anti-spoofing methods.
+[P103] Body Text | Thepade et al. [25] reviewed face anti-spoofing techniques comprehensively. Here, the authors discussed the texture, motion, multi-fusion-based face anti-spoofing methods, and available 2D attack databases. It also describes various face anti-spoofing techniques, including CNN, texture feature descriptors, and motion-based techniques. However, additional study is required to establish a reliable face biometric system.
+[P104] Body Text | Zhang et al. have done a review of the face anti-spoofing algorithm [26]. In this work, the authors show the progress of face spoofing techniques based on manual feature extraction methods based on image texture, image quality, computer interaction, and depth analysis. Then, deep learning automatically features extract, transfer learning, feature integration, and domain generalization. In 2019, a systematic literature review on insights into face liveness detection by Raheem et al. [27]. It focuses mainly on liveness indicators as a hint that helps devise a suitable solution for face spoofing problems. The paper [28] gives a comprehensive study of the state-of-the-art methods for PAD and an overview of respective labs working in this domain. Challenges and competitions in this domain are discussed in detail.
+[P105] Body Text | However, this paper considers a research study from 2011 to 2017. In 2021, another competition for face liveness detection (LivDet-Face2021) was conducted through Biometric Evaluation and Testing (BEAT) platform. Competition has opened several challenges to be solved by researchers [29]. In the paper, a review of the face presentation attack competition is conducted. Detail study of the various competition’s opened in this domain from 2019 to 2021 is discussed, along with future challenges.
+[P106] Body Text | However, more existing review papers are focused on only one aspect, such as deep learning-based unimodal and multi-modal approaches [30], sensor-based approaches [31], 3D mask presentation attack detection under thermal infrared conditions [32], presentation attack detection methods for smartphones [33], various feature extraction techniques, per- formance metrics for detection of morph attacks [34], deep learning–based face presentation attack detection, bibliometric review of domain adaptation–based face presentation attacks detection [35] There have been few researchers that have examined feature extraction approaches and datasets available for face liveness identification.
+[P107] Body Text | No existing systematic review focuses on unseen presentation attack detection chal- lenges and problems. The current systematic literature review focuses solely on a single topic, such as deep learning-based techniques, and lacks a thorough evaluation based on publicly accessible datasets. A thorough examination of the methods employed for effective and dependable face anti-spoofing systems is also lacking in the literature. Prior research relevant to this study is listed in Table 2.
+[P108] Body Text | (empty)
+[P109] Body Text | (empty)
+[P110] Body Text | (empty)
+[P111] Normal | Table 2. Prior research related to FLD.
+[P112] Body Text | (empty)
+[P113] Normal | Ref.	Objectives and Topics	Observation and Limitations	Type
+[P114] Normal | (empty)
+[P115] Body Text | (empty)
+[P116] Normal | [28]
+[P117] Normal | 2017
+[P118] Body Text | (empty)
+[P119] Body Text | (empty)
+[P120] Body Text | (empty)
+[P121] Body Text | (empty)
+[P122] Normal | [27]
+[P123] Normal | 2019
+[P124] Body Text | (empty)
+[P125] Body Text | (empty)
+[P126] Body Text | (empty)
+[P127] Body Text | (empty)
+[P128] Body Text | (empty)
+[P129] Normal | [24]
+[P130] Normal | 2020
+[P131] Body Text | (empty)
+[P132] Body Text | (empty)
+[P133] Body Text | (empty)
+[P134] Body Text | (empty)
+[P135] Normal | [25]
+[P136] Normal | 2020
+[P137] Body Text | (empty)
+[P138] Body Text | (empty)
+[P139] Body Text | (empty)
+[P140] Body Text | (empty)
+[P141] Normal | [26]
+[P142] Normal | 2020
+[P143] Body Text | (empty)
+[P144] Body Text | (empty)
+[P145] Normal | [36]
+[P146] Normal | 2021
+[P147] Body Text | (empty)
+[P148] Body Text | (empty)
+[P149] Normal | [30]
+[P150] Normal | 2021
+[P151] Body Text | (empty)
+[P152] Body Text | (empty)
+[P153] Body Text | (empty)
+[P154] Normal | [31]
+[P155] Normal | 2021
+[P156] Normal | It includes state-of-the-art methods for face presentation attack detection and respective labs in the domain. It also describes challenges and competitions in the same domain.
+[P157] Body Text | (empty)
+[P158] Body Text | (empty)
+[P159] Normal | It discusses a systematic review using the PRISMA approach. It focuses on liveness indications, particularly as a guide for determining the best solution for various spoofing issues.
+[P160] Body Text | (empty)
+[P161] Body Text | (empty)
+[P162] Normal | It discusses the typology of presentation attacks and detection methods in various databases available for 2D and 3D attacks. Challenges, evolutions, and current trends face PAD and provide new perspectives on future research.
+[P163] Normal | It discusses the texture, motion,
+[P164] Normal | multi-fusion-based face anti-spoofing methods, and available 2D attack databases. It also describes various face anti-spoofing techniques, including CNN, texture feature descriptors, and motion-based techniques.
+[P165] Normal | It includes explicit feature extraction approaches based on image texture, image quality, computer interaction, depth analysis, deep learning feature extraction, transfer learning, feature integration, and domain generalization.
+[P166] Normal | It discusses the international competitions conducted on unimodal and multi-model face presentation attack detection.
+[P167] Normal | It includes advanced deep learning and multi-modal fusion-based methods for FPAD; an
+[P168] Normal | in-depth technical review is conducted, including recent deep learning approaches, datasets, and evaluation metrics.
+[P169] Normal | It includes deep learning methods and datasets used for the face anti-spoofing problem. It also discusses techniques for sensor-based approaches.
+[P170] Normal | Not following the PRISMA approach, the focus is on challenges and competitions from 2011 to 2017.
+[P171] Normal | In a review of research articles published between 2014–2017, the number of research articles studied is only 65, and a detailed analysis of available databases was explored. The focus is only on liveness indicator clues & lack of new trends in the research area since 2017.
+[P172] Normal | Not followed PRISMA approach, more focus on RGB-based methods, sensor-based PAD methods not
+[P173] Normal | explored in detail; more advanced research directions need to explore
+[P174] Normal | Not followed PRISMA approach, for discussion, only last four years 2015–2019, The focus is only on deep learning-based solutions. Databases not extensively reviewed. Future directions are not discussed.
+[P175] Normal | Few research articles were used in the study, lack of discussion of available databases for PAD, and very few future directions were explored.
+[P176] Normal | It includes the latest five competitions from 2019 to 2021, Not following the PRISMA approach.
+[P177] Normal | Not following the PRISMA approach, it focuses on in-depth deep learning and a multi-modal approach, including research articles up to 2021.
+[P178] Normal | The PRISMA approach needs to be followed; more focus is given to deep learning methods, and advanced research directions need to be explored.
+[P179] Normal | (empty)
+[P180] Normal | Review
+[P181] Body Text | (empty)
+[P182] Body Text | (empty)
+[P183] Body Text | (empty)
+[P184] Body Text | (empty)
+[P185] Body Text | (empty)
+[P186] Normal | Systematic Literature Review
+[P187] Body Text | (empty)
+[P188] Body Text | (empty)
+[P189] Body Text | (empty)
+[P190] Body Text | (empty)
+[P191] Body Text | (empty)
+[P192] Normal | Review
+[P193] Body Text | (empty)
+[P194] Body Text | (empty)
+[P195] Body Text | (empty)
+[P196] Body Text | (empty)
+[P197] Body Text | (empty)
+[P198] Normal | Review
+[P199] Body Text | (empty)
+[P200] Body Text | (empty)
+[P201] Body Text | (empty)
+[P202] Body Text | (empty)
+[P203] Body Text | (empty)
+[P204] Normal | Review
+[P205] Body Text | (empty)
+[P206] Body Text | (empty)
+[P207] Body Text | (empty)
+[P208] Normal | Review
+[P209] Body Text | (empty)
+[P210] Body Text | (empty)
+[P211] Body Text | (empty)
+[P212] Normal | Review
+[P213] Body Text | (empty)
+[P214] Body Text | (empty)
+[P215] Body Text | (empty)
+[P216] Body Text | (empty)
+[P217] Normal | Review
+[P218] Normal | (empty)
+[P219] Body Text | (empty)
+[P220] Body Text | (empty)
+[P221] Body Text | (empty)
+[P222] List Paragraph | Motivation
+[P223] Body Text | Our SLR comprehensively presents the most recent advancements related to face liveness detection by undertaking thorough surveys on machine learning-based and deep learning-based techniques and using publicly available datasets and evaluation metrics. This systematic review aims to critically examine existing research articles and their out- comes in the formulated research issue.
+[P224] Body Text | This research paper presented a systematic literature review (SLR) that, to the author’s knowledge, is one of the foremost to cover the face liveness detection methods based on the AI approach for robust face recognition.
+[P225] Body Text | (empty)
+[P226] Body Text | (empty)
+[P227] List Paragraph | Research Goals
+[P228] Body Text | This study aims to compare the current biometric face liveness detection methods and to review the results of the most recent investigations. As a result, research questions are presented to analyze face liveness detection comprehensively. The research questions were developed, as shown in Table 3, to enhance the comprehensiveness of this systematic literature review study.
+[P229] Body Text | (empty)
+[P230] Normal | Table 3. Research Goals.
+[P231] Body Text | (empty)
+[P232] Normal | Number	Research Questions	Motivations	Answered in Section
+[P233] Normal | (empty)
+[P234] Body Text | (empty)
+[P235] Normal | RQ1
+[P236] Normal | What is the distribution of published papers related to face liveness detection methods by year, publication, and publication type?
+[P237] Normal | It aids in determining when, where, and who conducted the research studies.
+[P238] Normal | (empty)
+[P239] Normal | Section 3, Section 3.1
+[P240] Normal | (empty)
+[P241] Normal | What are the various attacks against a facial recognition system?
+[P242] Normal | What are the different datasets
+[P243] Normal | It aids in exploring the different types of attacks performed on face recognition systems.
+[P244] Normal | It assists in locating a dataset with
+[P245] Normal | (empty)
+[P246] Normal | Section 3, Section 3.2
+[P247] Normal | (empty)
+[P248] Normal | RQ3
+[P249] Body Text | (empty)
+[P250] Body Text | (empty)
+[P251] Body Text | (empty)
+[P252] Body Text | (empty)
+[P253] Normal | RQ4
+[P254] Body Text | (empty)
+[P255] Body Text | (empty)
+[P256] Body Text | (empty)
+[P257] Body Text | (empty)
+[P258] Normal | RQ5
+[P259] Normal | available for different types of presentation attacks?
+[P260] Normal | What are the main methods related to artificial intelligence for face presentation attack detection? And what are the evaluation metrics used in Face liveness detection?
+[P261] Body Text | (empty)
+[P262] Normal | What are the main challenges and problems faced by existing face anti-spoofing techniques?
+[P263] Normal | appropriate training and testing data for good research outcomes.
+[P264] Normal | It aids in identifying appropriate artificial intelligence approaches for today’s facial biometric applications. It helps to select the appropriate evaluation metrics for performance measures.
+[P265] Normal | It aids in exploring the fundamental issues that occur when studying face presentation attacks and the benefits and limitations of current solutions.
+[P266] Normal | Section 3, Section 3.3
+[P267] Body Text | (empty)
+[P268] Body Text | (empty)
+[P269] Body Text | (empty)
+[P270] Body Text | (empty)
+[P271] Normal | Section 4, Section 5
+[P272] Body Text | (empty)
+[P273] Body Text | (empty)
+[P274] Body Text | (empty)
+[P275] Body Text | (empty)
+[P276] Normal | Section 6, Section 6.1,
+[P277] Normal | Section 6.2, Section 7
+[P278] Normal | (empty)
+[P279] Normal | What are future directions for a robust RQ6	and reliable face liveness detection
+[P280] Normal | system?
+[P281] Normal | It aids in finding important research avenues that have yet to explore
+[P282] Normal | (empty)
+[P283] Body Text | (empty)
+[P284] Body Text | (empty)
+[P285] Body Text | (empty)
+[P286] List Paragraph | Contributions of the Study
+[P287] Body Text | The contributions of our systematic literature review are as follows:
+[P288] List Paragraph | An exhaustive survey of studies identified using the PRISMA Approach for face live- ness detection using AI approaches, including Machine Learning and Deep Learning.
+[P289] List Paragraph | A thorough examination of the quantity and consistency of standard datasets is carefully investigated.
+[P290] List Paragraph | Feature extraction and Classification methods, Challenges, and issues in face liveness detection are discussed.
+[P291] List Paragraph | Various evaluation metrics used in face liveness detection are discussed.
+[P292] List Paragraph | Future research directions and open perspectives are conceptualized to assist re- searchers in selecting the best solution for robust face liveness detection in face bio- metric authentication systems.
+[P293] List Paragraph | Limitations of the Study
+[P294] Body Text | This SLR has some obvious risks to its logic, regardless of whether or not the appro- priate keywords were detected or relevant search engines were chosen. In this regard, a list of distinct publications demonstrates that the search scope is acceptable since no other papers were discovered to meet the specified inclusion criteria. Although it is expected, our SLR may have missed some relevant research due to the limitations of the scientific dataset, specific keywords employed in the search, and review duration. From 2010 through 2022,
+[P295] Body Text | (empty)
+[P296] Body Text | (empty)
+[P297] Body Text | (empty)
+[P298] Body Text | the author chooses only 95 studies. Authors were confident in the manual screening of studies obtained from “library services such as SCOPUS and WoS (Web of Science).”
+[P299] Body Text | The remaining sections of the paper are structured as follows: Section 2 discusses the proposed methodology. The findings and solutions to the submitted study questions are presented in Section 3. Section 4 examines the methods covered in a previous section, followed by Section 5, in which evaluation metrics are discussed. Sections 6 and 7 portray the challenges and future directions for face liveness detection. Section 8 is on discussion followed by conclusions. The outline of this SLR is represented in Figure 2.
+[P300] Body Text | (empty)
+[P301] Normal | Figure 2. Outline of SLR.
+[P302] Heading 1 | Research Methodology
+[P303] Body Text | A systematic review was carried out using the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) process. A set of guidelines for conducting system- atic reviews and other data-driven meta-analyses are given in PRISMA Approach [37]. The conduct of a systematic review three steps protocol is used in this paper: the formulation of research questions, the search databases, and the criteria for inclusion and exclusion of research articles—the details of these steps for research analysis are detailed in the following pages [38]. This systematic review is organized to cover the study’s breadth under consideration by categorizing and evaluating existing publications. The first step is to define the research questions so that the coverage rate of current works is accurately described. There should be some perspectives that can help researchers generate new ideas by analyzing similar results. Table 3 lists the research questions used in SR Research question 1 aims to review the published work. The purpose of research question 2 is to list all possible attacks on face presentation. The detailing of the available datasets explored in FPAD is addressed with research question 3. A few prominent FPAD methods are to be studied in research question 4. The limitations and challenges of existing prominent methods have to be listed in research question 5. Future work and progress directions are expected to be chalked out in research question 6. The first step in conducting SR is to identify information sources.
+[P304] Body Text | Related manuscripts were found using the most popular Scopus and Web of Science. The next step is to develop procedures for reviewing the technical and scientific articles that these searches produced to identify relevant papers. The proposed approach is divided into two phases. The first phase uses Boolean operators AND/OR to identify search terms
+[P305] Body Text | (empty)
+[P306] Body Text | (empty)
+[P307] Body Text | (empty)
+[P308] Body Text | from research questions and prepare a list of keywords. The second phase uses Boolean operators AND/OR to select queries to search for and collect all relevant data. Table 4 gives the list of fundamental, Primary & Secondary Keywords. Table 5 shows the search queries used in this article. In Table 5, # indicates the number of the initial result.
+[P309] Body Text | (empty)
+[P310] Normal | Table 4. List of primary and secondary keywords used.
+[P311] Body Text | (empty)
+[P312] Normal | Fundamental Keyword	“Face Anti-Spoofing”
+[P313] Body Text | (empty)
+[P314] Normal | “Face Liveness detection,” “Face Presentation
+[P315] Normal | (empty)
+[P316] Normal | “Face Anti-spoofing”
+[P317] Body Text | (empty)
+[P318] Body Text | (empty)
+[P319] Normal | Secondary Keywords
+[P320] Normal | Attacks,” “Artificial Intelligence,” and “Domain Adaptation.”
+[P321] Normal | “Machine Learning,” “Deep Learning,” “Domain Generalization,” Reinforcement Learning, “Face Biometric spoofing.”
+[P322] Normal | (empty)
+[P323] Body Text | (empty)
+[P324] Body Text | (empty)
+[P325] Body Text | (empty)
+[P326] Normal | Table 5. Search queries.
+[P327] Body Text | (empty)
+[P328] Normal | Database	Query	# Initial Result
+[P329] Normal | Scopus	((machine learning) OR (Deep Learning) (Artificial Intelligence) OR (Domain Adaptation) OR (Domain	283
+[P330] Normal | (empty)
+[P331] Normal | Web of Science (WoS)
+[P332] Normal | Generalization) OR (Reinforcement Learning)) AND ((Face Anti Spoofing) OR (Face Presentation Attacks) OR (Face Liveness Detection) OR (Face Biometric Spoofing))
+[P333] Normal | 188
+[P334] Normal | (empty)
+[P335] Body Text | (empty)
+[P336] Body Text | (empty)
+[P337] List Paragraph | Inclusion and Exclusion Criteria
+[P338] Body Text | As given in Table 6, the authors established a set of inclusion criteria for research paper selection and rejection exclusion criteria for selecting appropriate research studies for systematic review. In the screening procedure, three steps of inclusion criteria are established as follows:
+[P339] List Paragraph | Abstract-based screening: Disqualify irrelevant research papers based on knowledge and keywords in research abstracts. Abstracts of research papers that met at least 40% of the inclusion criteria were considered for the following steps.
+[P340] List Paragraph | Full-text screening: The authors eliminated research papers that did not address or contribute to the search query in Table 5, i.e., abstracts that only represented minor aspects of the search query.
+[P341] List Paragraph | Quality-analysis step: The remaining research papers were subjected to a quality assessment, and those that did not meet any of the following requirements were eliminated:
+[P342] List Paragraph | C1: Findings and outcomes must include in research articles.
+[P343] List Paragraph | C2: The findings of research publications are supported by empirical evidence.
+[P344] List Paragraph | C3: The research goals and findings must be well presented.
+[P345] List Paragraph | C4: Appropriate and sufficient references must use in research papers.
+[P346] List Paragraph | Conduction of SR
+[P347] Body Text | The authors utilized the following steps to choose appropriate papers for this research: As represented in the PRISMA flow diagram, the measurements of identification, screen- ing, eligibility, and inclusion. Figure 3 depicts a PRISMA (Preferred Reporting Items for Systematic Review and Meta-Analysis) flowchart diagram showing the identification and records selection process of studies for the systematic review [37]. In Figure 3, # is used to indicate the process of screening is followed. Scopus and Web of Science (WoS) are well- known and standard research databases for searching the query. Two hundred eighty-three research articles from Scopus and 188 from WoS are retrieved using a search query. A total of 471 records are further gone through the first screening process of duplicate records removal. One hundred eighty-seven duplicate records are removed based on doi and title. Later, 284 documents were undergone through a second screening process using inclusion and exclusion criteria of the title and abstract.
+[P348] Body Text | (empty)
+[P349] Body Text | (empty)
+[P350] Body Text | (empty)
+[P351] Normal | Table 6. Summary of inclusion and exclusion criteria.
+[P352] Body Text | (empty)
+[P353] Normal | Inclusion Criteria
+[P354] Body Text | (empty)
+[P355] Normal | Articles should be original research articles instead of review/survey articles. Research articles that were released between 2011 to 22.
+[P356] Normal | Research papers/articles should include search keywords in the title, abstract, or full text of research articles.
+[P357] Normal | Research articles that answer at least one research question.
+[P358] Normal | The developed solution should aim at resolving issues with Face presentation attack detection.
+[P359] Normal | Exclusion Criteria
+[P360] Body Text | (empty)
+[P361] Normal | Articles that are written in languages other than English Duplicate research articles
+[P362] Normal | Research articles with the unavailability of full text
+[P363] Normal | Research articles that are not relevant to face liveness detection, face presentation attacks, face anti-spoofing
+[P364] Body Text | (empty)
+[P365] Body Text | (empty)
+[P366] Normal | Figure 3. Flowchart identifies and selects studies for systematic review using the PRISMA approach [38].
+[P367] Body Text | Further, 98 documents still need to meet the inclusion criteria. Hence, 186 papers are forwarded to check for eligibility criteria. Based on inclusion and exclusion criteria for full text, the number of documents included for review is 95. Authors critically review these 95 research articles to find the research gaps in the existing literature and future directions in facing anti-spoofing.
+[P368] Body Text | (empty)
+[P369] Body Text | (empty)
+[P370] Heading 1 | Results
+[P371] Body Text | The findings of the systematic analysis are summarized in this section. It presents the responses to the mentioned research questions based on the findings of this review procedure, which follows an examination and analysis of 93 papers. Section 3.1 discusses research question 1 (RQ1) about the distribution of publication trends; Section 3.2 dis- cusses research question 2 (RQ2) about various attacks on face liveness detection systems. Section 3.3 gives the comparative analysis of standard datasets used in literature that address research question 3 (RQ3) taken up for study.
+[P372] List Paragraph | RQ1 Distribution of Publication Trends Related to Face Liveness Detection
+[P373] Heading 1 | RQ1: What is the distribution of published papers related to face liveness detec- tion techniques by year, publication, and publication type?
+[P374] Body Text | Research articles used for the study were analyzed as par publication trends by year, reports by publisher, and publication type. There is a total of 95 research articles used for analysis purposes. Figure 4 shows the distribution of research articles by (a) publication year, (b) publication type, and (c) publication house. Research articles used for the study were analyzed as par publication trends by year, publisher, and publication type. There is a total of 95 research articles used for analysis purposes. In 2020 & 2021, the maximum number of research articles got published. Authors have considered research articles published up to June 2022, five papers. A maximum of 64 papers are published in IEEE and followed by Springer, 12 in the count. The research articles for this study were published as conference papers, articles, and proceeding papers. The contribution on Conference papers is 51%, Article papers are 47% & proceeding papers are 2%. As per the analysis, this topic has significant strength in research.
+[P375] Body Text | (empty)
+[P376] Normal | (a)	(b)
+[P377] Body Text | (empty)
+[P378] Normal | (c)
+[P379] Normal | Figure 4. Analysis of selected research articles by (a) Publication Year, (b) Publication type, and
+[P380] Normal | (c) Publishing house.
+[P381] Normal | (empty)
+[P382] Body Text | (empty)
+[P383] List Paragraph | RQ2 Face Spoofing Attacks
+[P384] Body Text | With the advancement in technology, facial recognition systems have increased so widely. Along with that, the challenges or threats to facing recognition systems also come into the picture. Intruders use various spoofing techniques to fool the facial recognition- based authentication systems, known as Face Spoofing attacks and are also commonly termed Face presentation attacks. The different types of spoofing techniques or attacks are discussed in this section. Face Spoofing attacks are classified as shown in Figure 5.
+[P385] Body Text | (empty)
+[P386] Normal | Figure 5. Categorization of Face Spoofing Attacks and Spoof Instruments.
+[P387] Body Text | The face spoofing attacks are broadly categorized as static attacks & dynamic attacks, whereas those are sub-classified by 2D or 3D static & dynamic attacks.
+[P388] List Paragraph | 2D Static & Dynamic Attacks
+[P389] Body Text | 2D Static Spoofing attacks are when intruders employ pictures, flattened papers, and masks for authentication. Images taken on paper are kept in front of the face recognition system by intruders to get access to the systems. A paper should be of good quality and in the A3 or A4 size. As seen in Figure 6a, printed picture attacks are one type of printed photo attack. It is the most common type of attack as it is easy to perform due to the large availability of individual pictures on social media. Another approach to spoof images is to cut a printed photo on the eyes or lips region to add some liveliness to the photo kept in front of the camera; this is known as a cut photo attack, as shown in Figure 6b. As face recognition-based systems get prone to attacks, intruders also come with different attacks. Another method for creating spoof photographs is to hold a genuine user’s photo in front of the camera in a tilted position, either horizontally or vertically, to give the image depth. As demonstrated in Figure 6e, this method is known as a wrapped photo attack.
+[P390] Body Text | (empty)
+[P391] Body Text | (empty)
+[P392] Body Text | (empty)
+[P393] Normal | (empty)
+[P394] Body Text | (empty)
+[P395] Normal | (empty)
+[P396] Body Text | (empty)
+[P397] Body Text | (empty)
+[P398] Normal | Figure 6. Sample Face spoofing attacks (a) Photo attack sample from OULU-NPU dataset [39]
+[P399] Normal | (b) Photo cut attack OULU-NPU attack [39] (c) Replay Attack Sample [40] (d) Flat Printed photo attack (e) Wrapped photo attack (f) 3D Mask generated using Face Construction using front-side faces (g) Sample 3D Latex mask from MLFP DB [41], (h) 3D model attack [42].
+[P400] Body Text | The matte paper and printed masks, plastic masks, are used as attacking instruments. 2D static attacks are quick and straightforward to execute in actual circumstances, necessi- tating sophisticated facial recognition algorithms.
+[P401] Body Text | Furthermore, a high-definition photo on a smartphone screen, a series of high-definition images, and a video of a genuine person on the screen of smart and portable devices shown in front of the camera of face authentication systems are other approaches to spoofing attacks. These attacks are 2D dynamic attacks. Video replay attacks are superior to 2D static photo attacks because they incorporate unique features such as eye movements, lip motions, and shifts of facial emotions to simulate liveness. Replay attacks are often harder to spot than photograph spoofs since they imitate the texture and contour of the face and its dynamics, such as eye movements, lips, and facial expressions.
+[P402] Body Text | Facial recognition systems vulnerable to 2D static picture attacks would perform significantly worse against 2D dynamic video attacks. Being robust against photo attacks can mean something other than being similarly strong against video attacks. As a result, appropriate measures should be designed and implemented for robust face recognition systems.
+[P403] List Paragraph | 3D Static & Dynamic Attacks
+[P404] Body Text | This type of attack provides a 3D mask of the person’s face. The attacker creates a three-dimensional reconstruction of the victim’s face and shows it to the camera/sensor. Mask attacks involve more significant expertise than 2D static and dynamic attacks and access to additional facts to generate an accurate mask of a legitimate user. 3D static attacks employ a 3D mask as an instrument of 2D images adhered to a flexible structure such as a shirt or plastic bag. Such attacks fool low-level 3D face recognition systems. Different Sculptures are also used as attacking instruments in 3D static attacks. Two or more photos of the actual user’s face, such as one frontal shot and one profile shot, can be used to create 3D models. The attacker may be able to extrapolate a 3D reconstruction of the real face using these images.
+[P405] Body Text | Another type of 3D attack is a makeup presentation (M- PA) attack. For impersonation, the attacker may use heavy makeup to mimic the facial look of a target subject [37]. It was discovered that high-quality makeup attacks that resemble the facial texture and form of an impersonated target subject might represent a severe threat to the security of face
+[P406] Body Text | (empty)
+[P407] Body Text | (empty)
+[P408] Body Text | (empty)
+[P409] Body Text | recognition systems. Silicon can make high-quality 3D masks; this is another approach to 3D static attacks. Figure 6f–h shows some sample 3D mask attacks. A more advanced method is taking a direct 3D capture of a real user’s face. This approach has more difficulty because 3D acquisition can only be done with specialized equipment and is impossible without the end’s involvement. 3D dynamic attacks include using sophisticated robotics to reproduce expressions and complete makeup as a tool for making 3D reconstructions of real faces. However, Due to the spoofs’ high realism, this attack may be more likely to succeed [39]. 3D masks present additional hurdles to the FR system; the Multi-Modal Dynamics Fusion Network (MM-DFN) technique is being investigated [42]. It gets more challenging to create effective countermeasures as the entire face structure is copied. 3D mask attacks are predicted to become increasingly common in future years as 3D acquisition sensors become more ubiquitous.
+[P410] List Paragraph | RQ3 Standard Benchmark Datasets Used for Face Liveness Detection
+[P411] Body Text | RQ 3: What are the different datasets available for different types of presentation attacks? Data is the foundation of any artificial intelligence model. Obtaining particular, un- biased data from the right source would help build a more accurate and dependable model. This section discusses the most widely used publicly accessible datasets for detecting face presentation attacks. Table 7 gives an overview of existing 2D & 3D face presentation attack datasets used in the literature. In this table # sign is used to indicate the number of samples or subjects.
+[P412] Body Text | (empty)
+[P413] Normal | Table 7. 2D & 3D attack Datasets that are publicly available and used in the study.
+[P414] Body Text | (empty)
+[P415] Body Text | (empty)
+[P416] Body Text | (empty)
+[P417] Normal | Dataset	Year	#
+[P418] Normal | # Samples (Real/Fake)
+[P419] Normal | Type of Attack & Mode
+[P420] Normal | Resolution	(Static or Dynamic) (2D or 3D)
+[P421] Normal | Used in Literature
+[P422] Normal | Nanjing
+[P423] Normal | (empty)
+[P424] Normal | 5105/
+[P425] Normal | 7509
+[P426] Body Text | (empty)
+[P427] Body Text | (empty)
+[P428] Body Text | (empty)
+[P429] Normal | 300/
+[P430] Normal | 640 ×
+[P431] Normal | Photo Attack (2D static)
+[P432] Body Text | (empty)
+[P433] Body Text | (empty)
+[P434] Normal | Photo Attack (2D
+[P435] Normal | University of Aeronautics and Astronautics.
+[P436] Body Text | (empty)
+[P437] Normal | IDIAP
+[P438] Normal | (empty)
+[P439] Normal | [44–52]
+[P440] Normal | (empty)
+[P441] Normal | 1000	320 × 240
+[P442] Normal | Static)/Video Replay Attack
+[P443] Normal | (2D dynamic)
+[P444] Normal | Research Institute
+[P445] Normal | [53–64]
+[P446] Normal | (empty)
+[P447] Body Text | (empty)
+[P448] Body Text | (empty)
+[P449] Body Text | (empty)
+[P450] Body Text | (empty)
+[P451] Body Text | (empty)
+[P452] Body Text | (empty)
+[P453] Body Text | (empty)
+[P454] Body Text | (empty)
+[P455] Body Text | (empty)
+[P456] Body Text | (empty)
+[P457] Body Text | (empty)
+[P458] Body Text | (empty)
+[P459] Body Text | (empty)
+[P460] Normal | [82]
+[P461] Body Text | (empty)
+[P462] Body Text | (empty)
+[P463] Body Text | (empty)
+[P464] Normal | [83]
+[P465] Body Text | (empty)
+[P466] Body Text | (empty)
+[P467] Body Text | (empty)
+[P468] Normal | [84]
+[P469] Normal | 2D/3D attacks
+[P470] Normal | of Applied
+[P471] Normal | (empty)
+[P472] Body Text | (empty)
+[P473] Body Text | (empty)
+[P474] Body Text | (empty)
+[P475] Body Text | (empty)
+[P476] Body Text | (empty)
+[P477] Normal | Table 7. Cont.
+[P478] Normal | (empty)
+[P479] Body Text | (empty)
+[P480] Normal | Type of Attack & Mode
+[P481] Normal | Resolution	(Static or Dynamic) (2D or 3D)
+[P482] Normal | (empty)
+[P483] Body Text | (empty)
+[P484] Body Text | (empty)
+[P485] Normal | Used in Literature
+[P486] Normal | (empty)
+[P487] Body Text | (empty)
+[P488] Normal | [87]
+[P489] Normal | 1280 × 720, 800
+[P490] Normal | × 600
+[P491] Normal | (empty)
+[P492] Normal | 3D Mask attacks	University of
+[P493] Normal | (empty)
+[P494] Normal | [88,89]
+[P495] Normal | (empty)
+[P496] Body Text | (empty)
+[P497] Body Text | (empty)
+[P498] Body Text | (empty)
+[P499] Normal | [39]
+[P500] Body Text | (empty)
+[P501] Normal | [91]
+[P502] Body Text | (empty)
+[P503] Body Text | (empty)
+[P504] Body Text | (empty)
+[P505] Body Text | (empty)
+[P506] Body Text | (empty)
+[P507] Normal | [94]
+[P508] Body Text | (empty)
+[P509] Body Text | (empty)
+[P510] Normal | [95]
+[P511] Body Text | (empty)
+[P512] Normal | ROSE- YOUTU [73]
+[P513] Body Text | (empty)
+[P514] Body Text | (empty)
+[P515] Body Text | (empty)
+[P516] Normal | CASIA-
+[P517] Normal | (empty)
+[P518] Body Text | (empty)
+[P519] Body Text | (empty)
+[P520] Normal | 2018	20	3350	640 × 480
+[P521] Normal | ×
+[P522] Body Text | (empty)
+[P523] Body Text | (empty)
+[P524] Body Text | (empty)
+[P525] Normal | Real Sense
+[P526] Normal | (empty)
+[P527] Body Text | (empty)
+[P528] Normal | printed paper attack, video replay attack, paper masking attack, cropped mask, full mask, and upper mask
+[P529] Body Text | (empty)
+[P530] Body Text | (empty)
+[P531] Normal | Flat-cut/Wrapped-cut
+[P532] Normal | (empty)
+[P533] Body Text | (empty)
+[P534] Normal | Tencent Corporation and the NTU ROSE Lab
+[P535] Body Text | (empty)
+[P536] Normal | Institute of Automation,
+[P537] Normal | (empty)
+[P538] Body Text | (empty)
+[P539] Body Text | (empty)
+[P540] Body Text | (empty)
+[P541] Normal | [74]
+[P542] Normal | (empty)
+[P543] Normal | SURF [96]
+[P544] Body Text | (empty)
+[P545] Body Text | (empty)
+[P546] Body Text | (empty)
+[P547] Normal | WMCA
+[P548] Normal | 2019	1000	3000/18,000 v
+[P549] Body Text | (empty)
+[P550] Body Text | (empty)
+[P551] Body Text | (empty)
+[P552] Body Text | (empty)
+[P553] Normal | 1679(347/
+[P554] Normal | RGB Cam 1280 × 720
+[P555] Body Text | (empty)
+[P556] Body Text | (empty)
+[P557] Body Text | (empty)
+[P558] Normal | 1920 × 1080
+[P559] Normal | Photos (Eyes, Nose, Mouth) (2DStatic)
+[P560] Body Text | (empty)
+[P561] Body Text | (empty)
+[P562] Normal | 2D, 3D attacks 2D prints, video and
+[P563] Normal | Chinese Academy of Sciences (CASIA)
+[P564] Body Text | (empty)
+[P565] Body Text | (empty)
+[P566] Normal | Idiap Research
+[P567] Normal | [76,77,80]
+[P568] Normal | (empty)
+[P569] Normal | [78]	2019	72
+[P570] Body Text | (empty)
+[P571] Body Text | (empty)
+[P572] Normal | 1607
+[P573] Normal | 1332)
+[P574] Normal | 1260 × 720
+[P575] Normal | 320 × 240
+[P576] Normal | photo replays, mannequin heads, paper, silicone, and rigid masks
+[P577] Body Text | (empty)
+[P578] Normal | Print attack, Replay
+[P579] Normal | Institute	[79,97]
+[P580] Body Text | (empty)
+[P581] Body Text | (empty)
+[P582] Normal | Institute of
+[P583] Normal | (empty)
+[P584] Normal | CASIA- SURF CeFA [98]
+[P585] Body Text | (empty)
+[P586] Body Text | (empty)
+[P587] Body Text | (empty)
+[P588] Normal | CASIA-
+[P589] Normal | (empty)
+[P590] Normal | 2020
+[P591] Normal | (3
+[P592] Normal | Different Ethnic- ity)
+[P593] Normal | (empty)
+[P594] Normal | 1800/5400 v	299 × 299
+[P595] Body Text | (empty)
+[P596] Body Text | (empty)
+[P597] Body Text | (empty)
+[P598] Body Text | (empty)
+[P599] Normal | 1152
+[P600] Normal | Attack, 3D print, IR, Infrared, 2D & 3D attack Subsets
+[P601] Normal | Automation, Chinese Academy of Sciences (CASIA)
+[P602] Normal | Institute of Automation,
+[P603] Normal | (empty)
+[P604] Normal | [82]
+[P605] Normal | (empty)
+[P606] Normal | SURF 3DMASK [99]
+[P607] Normal | 2020	48
+[P608] Normal | (288/ 864) v
+[P609] Normal | 30 fps and 1080 p resolution
+[P610] Normal | 3Dmask attacks
+[P611] Normal | Chinese Academy of Sciences (CASIA)
+[P612] Normal | Institute of Automation,
+[P613] Normal | [83]
+[P614] Normal | (empty)
+[P615] Normal | HiFi Mask [100]
+[P616] Normal | 2021	75	54,600 v	-	3D Mask attacks
+[P617] Body Text | (empty)
+[P618] Body Text | (empty)
+[P619] Body Text | (empty)
+[P620] Normal | 24
+[P621] Normal | Chinese Academy of Sciences (CASIA)
+[P622] Normal | [84]
+[P623] Normal | (empty)
+[P624] Body Text | (empty)
+[P625] Normal | VFPAD [101]
+[P626] Normal | (empty)
+[P627] Body Text | (empty)
+[P628] Normal | 2022
+[P629] Normal | male and 16 female with different ethnicity’s
+[P630] Normal | (empty)
+[P631] Normal | 5836 v (4046/1790)
+[P632] Normal | photo prints, replay attack,
+[P633] Normal | rigid 3D, silicon 3D mask attacks
+[P634] Normal | (empty)
+[P635] Normal | Idiap Research Institute
+[P636] Normal | (empty)
+[P637] Body Text | (empty)
+[P638] Body Text | (empty)
+[P639] Normal | # indicates the number of samples or subjects.
+[P640] Normal | (empty)
+[P641] Body Text | (empty)
+[P642] Heading 1 | RQ4 Artificial Intelligence for Face Liveness Detection
+[P643] Body Text | The various face liveness detection AI-based techniques discussed in the literature are categorized based on the ML approach [102–105] & Deep Learning Approach [106–109]. Studies reveal that artificial intelligence-based methods for detecting face-presentation at- tacks are frequent. The first Section 4.1, discusses Feature extraction and Machine Learning approaches, followed by Section 4.2 on deep learning in face liveness detection.
+[P644] List Paragraph | Machine Learning and Feature Extraction Methods for FLD
+[P645] Body Text | The numerous feature extraction methods and classifiers categorize face liveness detection strategies. Texture, depth, motion, image quality, and multi-fusion techniques were employed as features. In contrast, findings from selected literature use various machine learning classifiers such as Support vector machines (SVM), Random Forest, naïve Bayes, Decision trees, and J48 [110]. Figure 7 shows the overview of Face presentation attack detection using the ML approach.
+[P646] Body Text | (empty)
+[P647] Normal | Figure 7. Face anti-spoofing techniques using a machine learning approach.
+[P648] List Paragraph | Texture-Based Feature Extraction
+[P649] Body Text | Texture features are one of the most well-explored strategies for identifying features in literature. Photos, replays, and 3D masks were detected with this tool. In general, static and dynamic aspects are separated—static features extract features from a single image, whereas dynamic features work on video frames. Static Feature extraction methods help detect static face presentation attacks such as printed photos, cut photos, wrapped photos, printed masks, etc. In contrast, Dynamic feature extraction methods address dynamic face presentation attacks such as video replay attacks, 3D Mask occlusion attacks, etc. For
+[P650] Body Text | (empty)
+[P651] Body Text | (empty)
+[P652] Body Text | (empty)
+[P653] Body Text | static texture feature extractions in the literature, various methods are used, such as Local Binary patterns (LBP) [40], DoG [111], Gabor wavelets, and HoG [112], whereas LBP is explored more in the literature. Each pixel is labeled by comparing its neighbors and concatenating it into a binary number using LBP texture coding. In addition to the coding strategy, other parameters include the number of neighbors and neighborhood radius. A histogram of the final calculated labels describes the texture, done for the whole image or selected image paths. The author [113] developed a color texture analysis-based face anti-spoofing solution. They created the final descriptor by connecting a single image channel LBP histogram. This method considers the three-color spaces RgB, YCbCr, and HSV to determine the most discriminating. Experiments demonstrate that the process based on color texture outperforms the grey surface in identifying diverse attacks. The same technique tailored for video attacks is used to investigate replay attack detection.
+[P654] Body Text | However, these approaches have the advantages of being simple to implement and requiring no user engagement. On the other hand, these approaches required feature vectors and performed poorly with low- resolution photos.
+[P655] List Paragraph | Motion-Based Feature Extraction
+[P656] Body Text | Motion cue-based algorithms use motion cues in video data to discriminate between genuine (live) faces and static photo assaults. Any dynamic physiological indication of life, such as eye blinking, lip movement, lip-reading [114], changes in facial expression, and pulse rhythm, is used as liveness cues. These approaches can identify static picture attacks but not video replay using motion/liveness signals or 3D mask attacks. According to [115] research, lip language recognition employs to identify changes in facial expressions, combined with voice recognition, to determine whether the user reads the randomly selected statements under specifications. Singh et al.’s blinking and lip movements were used to make real-time judgments. The HSV (hue, saturation, value) computes to determine whether the eyes and the mouth are open. They responded to phrase prompts generated at random by the algorithm and completed the required action to prove that it was a genuine person. Ng et al. [116] developed to guide users through making random facial expressions. By measuring the SIFT flow energy of several image frames, users may judge if the mandated facial expressions are complete and genuine faces.
+[P657] Body Text | The human-computer interaction-based technique can successfully mitigate inter-class discrepancies in algorithm performance through correctly designed interaction actions. Therefore, it has a high recognition rate and many other applications. Real-world business issues such as public safety, medical treatment, and finance use it frequently. On the other hand, a face anti-spoofing detection approach that relies on user-computer interaction requires much calculation and time to determine whether the user has completed action from a multi-frame image.
+[P658] Body Text | Most deceiving faces cannot replicate critical aspects such as a heartbeat, blood flow, and micro-movements of involuntary facial muscles. When using the life information-based technique, the differences in these vital qualities are primarily used to distinguish between living and fake faces.
+[P659] Body Text | The most extensively used approach for monitoring the micro intensity variations in the face that correlate to blood pulse is Remote PhotoPlethysmoGraphy (rPPG cue-based techniques). It can detect photo and 3D mask attacks because these PAIs lack the periodic intensity shifts characteristic of face skin.
+[P660] Body Text | However, ambient light and the item’s movements to be tested can readily influence the rPPG signal. Face anti-spoofing often requires cascading other traits and classifiers because the method is generally resilient.
+[P661] List Paragraph | Depth-Based Feature Extraction
+[P662] Body Text | There are different depths of information in various facial areas, such as the forehead, eyes, and nose tip. The photo- or video faces are two-dimensional, with the same depth of information at multiple locations. The depth information is used to detect fakes even
+[P663] Body Text | (empty)
+[P664] Body Text | (empty)
+[P665] Body Text | (empty)
+[P666] Body Text | though there are folded images. Depth information anti-spoofing methods typically need the usage of additional hardware. As a result of the difference in substance, the reflection properties of the fooled face differ from those of a living face’s skin, eyes, lips, and brows. When viewed in visible light, the deceived face appears to be similar to a real face, but it seems very different when viewed in infrared light. As near-infrared photos and videos show deceptive faces, this method is accurate, but well-made masks are less dissimilar from real faces. Steiner et al. [117] used short-wave infrared to distinguish between facial skin and mask attacks. A second use of the depth image captured by the depth camera is for anti-spoofing detection. A convolutional neural network and depth information from Kinect was used by Wang et al. [118] to distinguish between real and fake faces, as shown in Figure 8.
+[P667] Body Text | (empty)
+[P668] Normal | Figure 8. An illustration of CNN architecture used for face liveness detection.
+[P669] Body Text | There are several advantages to using depth information to identify face spoofing. There is a significant difference between a video face and a photo’s depth map; deprived of the excessive user interface, it has a good detection effect on photos and videos. A genuine expression, however, would have to invest in new technology, which would be pricey, and the latest hardware would also limit the number of users. In the depth map, the contours of the three-dimensional face can be seen, and there is a significant contrast between it and a photo face.
+[P670] List Paragraph | Image Quality-Based Feature Extraction
+[P671] Body Text | Presenting a deceptive human face necessitates plastic, silica gel, photo paper, electrical equipment, printing paper, and other media with qualities that differ from a real face’s facial features and skin materials. Variances in the reflection quality of materials, such as picture paper and mobile phone display screens, can induce. Both of which exhibit specular reflections but no living faces. The majority of picture quality after deception face secondary imaging differs from that of a living face, such as color distribution distortion and blurring of the prosthetic face image, even though the deception of the face manufacturing process is high. Image quality-based techniques use the variance among reflection and image distortion qualities to distinguish authentic and false faces.
+[P672] Body Text | The picture quality-based method has a low computational cost and a quick detection speed, making it ideal for online real-time detection. This approach, however, is open to attack when the image quality is excellent. A higher quality human face image and a false human face image should be used as inputs to obtain good enough image quality attributes. Table 8 gives the categorization of feature extraction for face liveness detection methods.
+[P673] Body Text | (empty)
+[P674] Body Text | (empty)
+[P675] Body Text | (empty)
+[P676] Normal | Table 8. Categorization of extraction methods for face liveness detection.
+[P677] Body Text | (empty)
+[P678] Normal | Feature Extracted	Methodology Used	Attacks Identified
+[P679] Body Text | (empty)
+[P680] Normal | Texture Feature extraction from Input Image Frequency Texture: 2D FFT Spatial Textures: DoG [111]
+[P681] Normal | -	Handcrafted Texture Feature, LBP
+[P682] Normal | (empty)
+[P683] Normal | Static Texture Based
+[P684] Normal | [102], Color LBP [112], LBP + Gabor
+[P685] Normal | Wavelets, LBP + GW + HoG [112]
+[P686] List Paragraph | CNN Based: AlexNet [118–120] Fine Tune VGG-Face [121], DPCNN, FaceDs [102], DeepPixBis [122]
+[P687] Normal | (empty)
+[P688] Body Text | (empty)
+[P689] Normal | Photo Attack, Video Replay Attack, 3D mask Attack of Low Quality
+[P690] Normal | (empty)
+[P691] Body Text | (empty)
+[P692] Body Text | (empty)
+[P693] Body Text | (empty)
+[P694] Body Text | (empty)
+[P695] Body Text | (empty)
+[P696] Body Text | (empty)
+[P697] Normal | Dynamic Texture-Based
+[P698] List Paragraph | Spatio-Temporal Texture [120]
+[P699] List Paragraph | Dynamic Mode Decomposition (DMD) [86]
+[P700] List Paragraph | CNN Based: LSTM-CNN [89], STASN [121]
+[P701] List Paragraph | (empty)
+[P702] Body Text | (empty)
+[P703] Body Text | (empty)
+[P704] Body Text | (empty)
+[P705] Body Text | (empty)
+[P706] Body Text | (empty)
+[P707] Body Text | (empty)
+[P708] Normal | Non-Invasive Motion-based Feature Extraction methods
+[P709] Body Text | (empty)
+[P710] Body Text | (empty)
+[P711] Normal | Invasive Motion-based Feature Extraction methods
+[P712] Body Text | (empty)
+[P713] Normal | rPPG Motion-based Feature Extraction methods
+[P714] List Paragraph | Eye Blinking [58,86,116]
+[P715] List Paragraph | Head Movement [94]
+[P716] List Paragraph | FDD (Frequency Dynamic Distributor) [96]
+[P717] List Paragraph | Optical Flow Lines(OFL) [122]
+[P718] Body Text | (empty)
+[P719] List Paragraph | Lips Reading Recognition (OFL) [123]
+[P720] Body Text | (empty)
+[P721] List Paragraph | rPPG Frequency Spectrum [124]
+[P722] List Paragraph | Local rPPG Correlation [125]
+[P723] List Paragraph | Deep rPPG [125]
+[P724] Normal | (empty)
+[P725] Body Text | (empty)
+[P726] Body Text | (empty)
+[P727] Body Text | (empty)
+[P728] Body Text | (empty)
+[P729] Normal | Static Photo Attacks
+[P730] Normal | Photo & 3D mask attack, Low-quality Video Replay Attack
+[P731] Normal | (empty)
+[P732] Body Text | (empty)
+[P733] Body Text | (empty)
+[P734] Normal | 3D Shape-Based (Depth-based)	Reconstructing Sparse 3D Face [117]	Planner Photo Attack
+[P735] Normal | (empty)
+[P736] Normal | CNN Based, NAS Based [109], 3D cloud point network [126]
+[P737] Normal | (empty)
+[P738] Normal | Video Replay Attack
+[P739] Normal | (empty)
+[P740] Body Text | (empty)
+[P741] Body Text | (empty)
+[P742] Body Text | (empty)
+[P743] List Paragraph | Problems in Existing Techniques
+[P744] Body Text | For spoof detection, face recognition systems use a variety of algorithms to assess static and dynamic information. Previously, used hand-crafted features to detect presentation threats in feature-based approaches. Hand-crafted feature methods used techniques such as Local Binary Patterns (LBP), Speeded-Up Robust Features (SURF), Histogram of Oriented Gradient descriptors (HOG), and Difference of Gaussian (DoG). Texture analysis extensively employs hand-crafted feature approaches. Textural characteristics vary de- pending on the spoofing medium and devices. As a result, generalization is low for these approaches. Deep learning approaches emerged, allowing for effective feature learning in various applications. Furthermore, deep learning algorithms outperformed hand-crafted methods in terms of detection. Hence, current developments show a significant move toward deep learning-based techniques for detecting face presentation attacks.
+[P745] List Paragraph | Deep Learning in FLD
+[P746] Body Text | Deep learning-based algorithms have been effectively applied to various disciplines, including lip-reading from video, speech augmentation and recognition, medical imaging applications, security, anomaly, and so on. Convolutional neural networks have signifi- cantly advanced computer vision applications, particularly biometrics. Thanks to deep learning and its inherent feature learning capabilities, the anti-spoofing difficulty solve in a novel way. Existing deep neural network-based approaches have excellent intra-dataset per- formance. Figure 9 depicts the deep learning approaches for face liveness detection. In this
+[P747] Body Text | (empty)
+[P748] Body Text | (empty)
+[P749] Body Text | (empty)
+[P750] Body Text | section, a few deep learning approaches such as Convolutional Neural Networks (CNN), LSTM, Deep tree network (DTN), Autoencoders, Deep Neural Networks (DNN), Recur- rent Neural Networks (RNN), Deep Belief Networks (DBN), and Generative Adversarial Networks (GAN) are discussed.
+[P751] Body Text | (empty)
+[P752] Normal | Figure 9. Deep learning approaches for Face liveness detection.
+[P753] Body Text | Deep learning-based techniques are used to learn texture properties automatically. Rather than directly creating the texture characteristics, researchers researching these methods focus on building a great neural network to learn optimal texture features [65]. In 2014, Yang et al. pioneered the road for deep learning in the arena of face anti- spoofing by introducing a Convolutional Neural Network (CNN) to extract features in face anti-spoofing.
+[P754] Body Text | Moreover, the features acquired from the CNN’s many layers were concatenated into a single element and input into an SVM for face PAD. But this strategy is prone to overfitting because the dimension of the fused feature is much larger than the number of training samples. Principal component analysis (PCA) and so-called part features are used to minimize the feature dimension. In 2016, Patel et al. proposed CaffeNet, a face PAD end-to-end system based on one-path AlexNet. In place of the original 1000-way softmax, a two-way softmax was used as a binary classifier. CNN was pre-trained on ImageNet, and WebFace to provide an appropriate initialization and fine-tuned using existing face PAD datasets. To train a deep CNN for face PAD, Li et al. recommended utilizing the VGG-Face algorithm. An extensive dataset is used to prepare the CNN, then fine-tuned using a (much smaller) face spoofing database [127].
+[P755] Body Text | Depth + Texture Feature Fusion: The image depth information is crucial for determin- ing the face’s validity as the face in real life is three-dimensional, whereas the face attacked by photographs and screens is flat. The depth map differs from the real face, even if the face is deformed. A face depth map was initially used by Atoum et al. to distinguish between face spoofing. A two-channel CNN-based face anti-spoofing method was proposed in this study [96].
+[P756] Body Text | (empty)
+[P757] Body Text | (empty)
+[P758] Body Text | (empty)
+[P759] Body Text | Spatial + Temporal Feature Fusion: Spatial characteristics of faces, such as texture and depth, are essential, but temporal factors are even more critical for anti-spoofing. Examining a human face from a time and space viewpoint can provide more helpful information and enhance classification performance.
+[P760] List Paragraph | Transfer Learning in Face Liveness Detection (FLD)
+[P761] Body Text | Transfer learning is the most popular deep learning technique used in FPAD. A con- siderable amount of training data is often required to generate more distinct characteristics when using deep learning to detect face genuineness. However, there is insufficient data in the existing face anti-spoofing database, and most solutions use a neural network with only a few layers. A vast network classifier with good performance is challenging to train. Transfer learning helps avoid over-adapting to massive networks and saves a lot of computational resources when there is not enough data to train from the start [95].
+[P762] Body Text | Domain adaption (DA) and domain generalization (DG) used a transfer learning tech- nique to improve generalization in FPAD. Domain adaptation is a strategy for transferring information from a source domain to a target domain. Adaptation is moving data from a source domain to a target domain using various methods.
+[P763] List Paragraph | Domain Adaptation (DA) in FLD
+[P764] Body Text | In computer vision and machine learning, it is a frequent assumption that training and testing data come from the same distribution. However, many real-world scenarios (such as face recognition and spoof identification) require data from many distributions (facial appearance and pose, illumination conditions, camera devices, etc.). As a result, testing a pre-trained model with slightly different unseen data may have an over-fitting problem, resulting in a significant performance reduction. Domain adaptation is linked to transfer learning, which seeks to solve a learning issue in a target domain using training data from a source domain with a different distribution [98]. It has received much attention in recent computer vision tasks.
+[P765] Body Text | One of today’s most pressing concerns is improving face PAD algorithms’ generaliza- tion ability. Various strategies are explored, such as combining databases with a training model [128], NAS transfer learning approach [107,129] and one-class adaption [130]. Table 9 summarizes recent studies in face liveness detection.
+[P766] Normal | Table 9. Few popular methodologies are used in Face Liveness Detection.
+[P767] Body Text | (empty)
+[P768] Body Text | (empty)
+[P769] Body Text | (empty)
+[P770] Body Text | (empty)
+[P771] Normal | Ref. and	Methodology
+[P772] Normal | Domain Adapta- tion(DA)/Domain Generalization (DG)
+[P773] Normal | (empty)
+[P774] Normal | Performance Metrics and Model Performances
+[P775] Body Text | (empty)
+[P776] Normal | Half Total Error Rate
+[P777] Normal | Intra- Database Testing
+[P778] Normal | Cross- Database Testing
+[P779] Normal | (empty)
+[P780] Normal | [58]
+[P781] Normal | 2015
+[P782] Body Text | (empty)
+[P783] Body Text | (empty)
+[P784] Body Text | (empty)
+[P785] Normal | [97]
+[P786] Normal | 2018
+[P787] Normal | Person-Specific Domain Adaptation
+[P788] Body Text | (empty)
+[P789] Normal | Unsupervised Domain Adaptation framework
+[P790] Normal | CASIA Dataset, Replay- Attack
+[P791] Body Text | (empty)
+[P792] Body Text | (empty)
+[P793] Normal | Own
+[P794] Normal | Dataset-Rose- Youtu liveness database
+[P795] Normal | (HTER):1.40% (in case of
+[P796] Normal | Replay-attack dataset),	Y	N 10.54% (in case of CASIA
+[P797] Normal | Dataset)
+[P798] Body Text | (empty)
+[P799] Normal | Half Total Error Rate—27.70%
+[P800] Normal | (empty)
+[P801] Body Text | (empty)
+[P802] Body Text | (empty)
+[P803] Body Text | (empty)
+[P804] Body Text | (empty)
+[P805] Normal | temporal
+[P806] Body Text | (empty)
+[P807] Body Text | (empty)
+[P808] Body Text | (empty)
+[P809] Body Text | (empty)
+[P810] Normal | Adaptation
+[P811] Normal | (empty)
+[P812] Body Text | (empty)
+[P813] Body Text | (empty)
+[P814] Normal | Table 9. Cont.
+[P815] Body Text | (empty)
+[P816] Body Text | (empty)
+[P817] Body Text | (empty)
+[P818] Body Text | (empty)
+[P819] Body Text | (empty)
+[P820] Body Text | (empty)
+[P821] Body Text | (empty)
+[P822] Body Text | (empty)
+[P823] Body Text | (empty)
+[P824] Body Text | (empty)
+[P825] Body Text | (empty)
+[P826] Body Text | (empty)
+[P827] Body Text | (empty)
+[P828] Normal | [76]
+[P829] Normal | 2019
+[P830] Normal | generalization performed under a dual-force triplet-mining constraint.
+[P831] Normal | (OCA-FAS)
+[P832] Normal | Replay-Attack, MSU-MFSD, and
+[P833] Normal | Oulu-NPU datasets
+[P834] Normal | (HTER): 27.98% and Area Under Curve (AUC): 80.02%
+[P835] Normal | (empty)
+[P836] Normal | [133]
+[P837] Normal | 2020
+[P838] Body Text | (empty)
+[P839] Body Text | (empty)
+[P840] Body Text | (empty)
+[P841] Body Text | (empty)
+[P842] Normal | [134]
+[P843] Normal | one-class adaptation face anti-spoofing
+[P844] Normal | (FCN-DA-LSA)
+[P845] Normal | Fully Convolutional
+[P846] Normal | Average classification error rate(ACER): 1.69%
+[P847] Body Text | (empty)
+[P848] Body Text | (empty)
+[P849] Body Text | (empty)
+[P850] Normal | CASIA-FASD,
+[P851] Normal | Replay-Attack
+[P852] Normal | (empty)
+[P853] Body Text | (empty)
+[P854] Normal | 2020
+[P855] Body Text | (empty)
+[P856] Body Text | (empty)
+[P857] Body Text | (empty)
+[P858] Body Text | (empty)
+[P859] Normal | [135]
+[P860] Normal | 2020
+[P861] Body Text | (empty)
+[P862] Body Text | (empty)
+[P863] Body Text | (empty)
+[P864] Normal | [136]
+[P865] Normal | 2020
+[P866] Body Text | (empty)
+[P867] Body Text | (empty)
+[P868] Body Text | (empty)
+[P869] Normal | [137]
+[P870] Normal | 2020
+[P871] Body Text | (empty)
+[P872] Body Text | (empty)
+[P873] Body Text | (empty)
+[P874] Normal | [138]
+[P875] Normal | Network with Domain Adaptation and Lossless Size Adaptation
+[P876] Normal | One class domain adaptation using domain-guided pruning of CNN
+[P877] Normal | single-side domain generalization framework (SSDG)
+[P878] Body Text | (empty)
+[P879] Body Text | (empty)
+[P880] Normal | Domain-agnostic feature learning
+[P881] Body Text | (empty)
+[P882] Body Text | (empty)
+[P883] Normal | Total Pairwise Confusion
+[P884] Normal | DA	dataset, and OULU-NPU
+[P885] Normal | dataset
+[P886] Body Text | (empty)
+[P887] Body Text | (empty)
+[P888] Normal | OULU-NPU,
+[P889] Normal | Replay-Mobile, SWAN, WMCA,
+[P890] Normal | and IJB-C.
+[P891] Normal | OULUNPU, CASIA- FASD,
+[P892] Normal | DG		Idiap Replay- Attack, and MSU-MFSD
+[P893] Normal | Oulu-NPU, CASIA- MFSD,
+[P894] Normal | DG		Idiap Replay- Attack,
+[P895] Normal | MSU-MFSD
+[P896] Body Text | (empty)
+[P897] Normal | CASIA-FASD,
+[P898] Normal | Replay-Attack,
+[P899] Normal | Half Total Error Rate:
+[P900] Normal | 21.83%
+[P901] Body Text | (empty)
+[P902] Body Text | (empty)
+[P903] Body Text | (empty)
+[P904] Body Text | (empty)
+[P905] Body Text | (empty)
+[P906] Normal | AUC, ROC, APCER	Y	Y
+[P907] Body Text | (empty)
+[P908] Body Text | (empty)
+[P909] Normal | Half Total Error Rate (HTER):7.38% and Area Under Curve (AUC):
+[P910] Normal | 97.17%
+[P911] Body Text | (empty)
+[P912] Body Text | (empty)
+[P913] Normal | Half Total Error Rate
+[P914] Normal | (HTER): 14.00% and	N	Y ACER: 8.05%
+[P915] Normal | (empty)
+[P916] Normal | 2020
+[P917] Body Text | (empty)
+[P918] Body Text | (empty)
+[P919] Body Text | (empty)
+[P920] Body Text | (empty)
+[P921] Body Text | (empty)
+[P922] Body Text | (empty)
+[P923] Normal | [122]
+[P924] Normal | (TPC)loss and	DG Fast Domain
+[P925] Normal | Adaptation (FDA)
+[P926] Body Text | (empty)
+[P927] Body Text | (empty)
+[P928] Normal | (DR-
+[P929] Normal | UDA)Unsupervised adversarial
+[P930] Normal | MSU-MFSD,
+[P931] Normal | Oulu-NPU, SiW
+[P932] Body Text | (empty)
+[P933] Normal | Idiap
+[P934] Normal | Replay-Attack, CASIA Face Anti Spoofing,
+[P935] Normal | HTER:26.30%	Y	Y
+[P936] Body Text | (empty)
+[P937] Body Text | (empty)
+[P938] Body Text | (empty)
+[P939] Body Text | (empty)
+[P940] Body Text | (empty)
+[P941] Body Text | (empty)
+[P942] Normal | Half Total Error Rate
+[P943] Normal | (empty)
+[P944] Normal | 2021
+[P945] Normal | domain adaptation with disentangled representation
+[P946] Normal | MSU-MFSD,
+[P947] Normal | ROSEYoutu, and Oulu-NPU use the RGB modality of the CASIA- SURF
+[P948] Normal | (HTER): 28.70%, Equal	Y	Y
+[P949] Normal | Error Rate (EER): 3.20%
+[P950] Normal | (empty)
+[P951] Body Text | (empty)
+[P952] Body Text | (empty)
+[P953] Body Text | (empty)
+[P954] Body Text | (empty)
+[P955] Body Text | (empty)
+[P956] Body Text | (empty)
+[P957] Body Text | (empty)
+[P958] Body Text | (empty)
+[P959] Normal | Ref. and
+[P960] Normal | Table 9. Cont.
+[P961] Body Text | (empty)
+[P962] Normal | Domain Adapta-
+[P963] Normal | (empty)
+[P964] Body Text | (empty)
+[P965] Normal | Intra-
+[P966] Normal | (empty)
+[P967] Body Text | (empty)
+[P968] Normal | Cross-
+[P969] Normal | (empty)
+[P970] Normal | Year	Methodology
+[P971] Normal | tion(DA)/Domain Generalization (DG)
+[P972] Normal | Performance Metrics and Model Performances
+[P973] Body Text | (empty)
+[P974] Normal | Spoof-in-the-
+[P975] Normal | Database Testing
+[P976] Normal | Database Testing
+[P977] Normal | (empty)
+[P978] Body Text | (empty)
+[P979] Normal | [139]
+[P980] Normal | 2021
+[P981] Body Text | (empty)
+[P982] Body Text | (empty)
+[P983] Body Text | (empty)
+[P984] Body Text | (empty)
+[P985] Normal | [53]
+[P986] Normal | 2021
+[P987] Normal | (SSR-FCN)
+[P988] Normal | Self-Supervised Regional Fully Convolutional Network
+[P989] Body Text | (empty)
+[P990] Normal | Camera Invariant Feature Learning for Generalized Face
+[P991] Normal | Anti-Spoofing
+[P992] Normal | Wild with Multiple Attacks
+[P993] Normal | DG	(SiW- M),
+[P994] Normal | Oulu-NPU, CASIA-FASD &
+[P995] Normal | Replay-Attack
+[P996] Body Text | (empty)
+[P997] Normal | CASIA-FASD,
+[P998] Normal | Replay-Attack Oulu-NPU, and MSU-MFSD
+[P999] Normal | Average Classification error rate (ACER): 2.80%, Half Total Error Rate (HTER): 19.90%
+[P1000] Body Text | (empty)
+[P1001] Body Text | (empty)
+[P1002] Body Text | (empty)
+[P1003] Normal | Equal Error Rate (EER):
+[P1004] Normal | 0.89%, HTER: 17.60% for	Y	Y
+[P1005] Normal | cross-dataset evaluation HTER: 5.90% (in a
+[P1006] Normal | (empty)
+[P1007] Body Text | (empty)
+[P1008] Body Text | (empty)
+[P1009] Normal | sequence
+[P1010] Body Text | (empty)
+[P1011] Body Text | (empty)
+[P1012] Body Text | (empty)
+[P1013] Body Text | (empty)
+[P1014] Body Text | (empty)
+[P1015] Normal | CNN using Near
+[P1016] Body Text | (empty)
+[P1017] Body Text | (empty)
+[P1018] List Paragraph | Domain Generalization (DG) in FLD
+[P1019] Body Text | With the widespread use of deep learning in face anti-spoofing, many approaches have been presented. However, these methods are mainly confined to detecting known spoofing attempts, leaving unexpected spoofing assaults unnoticed. The following strategies were created to improve the generalization ability of detection systems under “invisible” attacks. Domain generalization is one of the strategies used by the biometric community to get generalizations in attack situations that are not yet known. There is a bias in existing face PAD approaches toward cues learned from training data. It is challenging to generalize against attacks that occur in various settings, devices, lighting situations, or materials. By considering both temporal and spatial information and limiting a cross-entropy loss and a generalization loss, the author [131] has aided in learning generalized feature representa- tions. To increase the discriminability of the learned feature space, the author combined learning a generalized feature space with a dual-force triplet mining constraint [77]. Find- ing a compact and generalized feature space for fake faces is challenging due to the high distribution disparities among fake faces in different domains.
+[P1020] Body Text | However, SSR-FCN is limited by the amount and quality of available training data, even though the suggested method is well-suited for generalizable face presentation at- tack detection. Cross-dataset generalization performance suffers when trained on a low- resolution dataset, such as Replay-Attack [129].
+[P1021] List Paragraph | Zero-Shot Learning in Face Liveness Detection
+[P1022] Body Text | Face anti-spoofing prevents false faces from being recognized as actual users by face recognition systems. While sophisticated anti-spoofing solutions are developed, new types of spoof attacks are also being developed, posing a threat to all current systems. According to the author, detecting unknown spoof attacks is known as Zero-Shot Face Anti-spoofing (ZSFA). Liu. Y has presented a revolutionary Deep Tree Network (DTN) to combat the ZSFA. In an unsupervised manner, the tree is learned to segment the fake samples into
+[P1023] Body Text | (empty)
+[P1024] Body Text | (empty)
+[P1025] Body Text | (empty)
+[P1026] Body Text | semantic sub-groups. When a data sample arrives, whether from a known or unknown attack, DTN sends it to the closest spoof cluster and makes a binary judgment.
+[P1027] List Paragraph | Anomaly Detection in Face Liveness Detection
+[P1028] Body Text | An anomaly detection approach was used to detect unseen attacks in recent research. The classification of one class preceded the discovery of anomalies. The types of attacks in practical applications are likely unknown, potentially occupying a large portion of the feature domain. As a result, one of the most significant potential issues in current anti-spoofing approaches is a failure to generalize on undiscovered sorts of attacks. First, the authors create novel assessment techniques for existing publicly available databases to highlight the generalization concerns of two-class anti-spoofing systems. Second, to combine the data collection efforts of many institutions, the author has created a problematic aggregated database that combines three publicly available datasets: Replay-Attack, Replay- Mobile, and MSU MFSD, and reports the result.
+[P1029] Body Text | A unique approach is presented [140] that reformulates the Generalized Presentation Attack Detection (GPAD) problem from the standpoint of anomaly detection. A deep metric learning model was provided. A triplet focal loss is a regularization for a novel loss called ‘metric-SoftMax.’ It guides the learning process towards more discriminating feature representations in an embedding space. Finally, the benefits of deep anomaly detection architecture are proven by introducing a few-shot posterior probability calculation that does not require any classifier to be trained on the learned features. Table 10 summarizes the anomaly detection approaches in FLD.
+[P1030] Body Text | (empty)
+[P1031] Normal | Table 10. Anomaly detection in FLD.
+[P1032] Body Text | (empty)
+[P1033] Body Text | (empty)
+[P1034] Body Text | (empty)
+[P1035] Normal | Ref. and Year	Method for Anomaly
+[P1036] Normal | Performance Metrics and Model Performance
+[P1037] Normal | Intra- Database Testing
+[P1038] Normal | Cross- Database Testing
+[P1039] Normal | (empty)
+[P1040] Body Text | (empty)
+[P1041] Normal | [141]
+[P1042] Normal | 2018
+[P1043] Body Text | (empty)
+[P1044] Body Text | (empty)
+[P1045] Body Text | (empty)
+[P1046] Body Text | (empty)
+[P1047] Body Text | (empty)
+[P1048] Normal | [140]
+[P1049] Normal | 2019
+[P1050] Body Text | (empty)
+[P1051] Body Text | (empty)
+[P1052] Body Text | (empty)
+[P1053] Body Text | (empty)
+[P1054] Normal | [142]
+[P1055] Normal | 2020
+[P1056] Normal | A GMM anomaly detector and aggregated database
+[P1057] Body Text | (empty)
+[P1058] Body Text | (empty)
+[P1059] Body Text | (empty)
+[P1060] Body Text | (empty)
+[P1061] Normal | a deep metric learning model
+[P1062] Body Text | (empty)
+[P1063] Body Text | (empty)
+[P1064] Body Text | (empty)
+[P1065] Body Text | (empty)
+[P1066] Normal | A hypersphere loss function
+[P1067] Normal | (empty)
+[P1068] Body Text | (empty)
+[P1069] Body Text | (empty)
+[P1070] Body Text | (empty)
+[P1071] Body Text | (empty)
+[P1072] Body Text | (empty)
+[P1073] Body Text | (empty)
+[P1074] Normal | [143]
+[P1075] Normal | 2020
+[P1076] Body Text | (empty)
+[P1077] Body Text | (empty)
+[P1078] Body Text | (empty)
+[P1079] Normal | [109]
+[P1080] Normal | 2021
+[P1081] Body Text | (empty)
+[P1082] Normal | [144]
+[P1083] Normal | HOG-based face detection VGG Face base feature extraction, Pseudo negative sampling
+[P1084] Body Text | (empty)
+[P1085] Normal | multiple kernel fusion for anomaly detection in unseen presentations
+[P1086] Normal | client-specific one-class
+[P1087] Normal | (empty)
+[P1088] Body Text | (empty)
+[P1089] Body Text | (empty)
+[P1090] Body Text | (empty)
+[P1091] Body Text | (empty)
+[P1092] Body Text | (empty)
+[P1093] Body Text | (empty)
+[P1094] Normal | Replay- Mobile, Replay attack, OULU-NPU, MSU-MFSD
+[P1095] Body Text | (empty)
+[P1096] Normal | Replay attack, Replay Mobile,
+[P1097] Normal | (empty)
+[P1098] Body Text | (empty)
+[P1099] Body Text | (empty)
+[P1100] Body Text | (empty)
+[P1101] Body Text | (empty)
+[P1102] Body Text | (empty)
+[P1103] Body Text | (empty)
+[P1104] Normal | ACER: 5.58%, AUC:100%,
+[P1105] Normal | EER: 0.00%, HTER: 0.00%
+[P1106] Normal | (empty)
+[P1107] Normal | 2021
+[P1108] Normal | adaptation-based anomaly detection
+[P1109] Normal | ROSE-YOUTU	HTER: 8.13%	Y	Y
+[P1110] Normal | (empty)
+[P1111] Body Text | (empty)
+[P1112] Body Text | (empty)
+[P1113] Body Text | (empty)
+[P1114] Body Text | (empty)
+[P1115] Heading 1 | RQ4 Evaluation Metrics
+[P1116] Body Text | The performance of face liveness Detection (FLD) systems was evaluated using ISO/IEC DIS 30107-3:2017. The authors reported the evaluation measures used to test various scenarios in a face-liveness detection system. Half Total Error Rate (HTER) is the most often utilized measure in anti-spoofing settings.
+[P1117] Body Text | Face Liveness Detection is frequently thought of as a binary classification issue. The performance is assessed using a variety of performance-related measures. Because these binary classification methods have two input classes, they are sometimes referred to as positive and negative. The types of errors they make and their approach to measuring them are used to evaluate their performance. Binary classification techniques make use of False positives and False negatives. False Positive Rate (FPR) and False Negative Rate (FNR) are two often documented error rates (FNR). They calculate the average of FRR (ratio of incorrectly rejected genuine score) and FAR yields HTER (ratio of wrongly accepted zero-effort impostor) [142]. Attack Presentation Classification Error Rate (APCER), Average Classification Error Rate (ACER), and Bonafide Presentation Classification Error Rate are the three variables (BPCER) [143]. While evaluating Face presentation attacks, the classification of attacks, the real face, intra-dataset, and cross-dataset performance are considered [145,146]. BPCER and APCER are two different methods for calculating the rates of correct and false classification errors. ACER measures performance inside a dataset, while HTER measures performance across datasets. The Receiver Operating Characteristic (ROC) curve and the Area Under the Curve (AUC) are also widely employed to evaluate the performance of face liveness detection methods in addition to the HTER and ACER scalar values. Equations (1)–(6) show the formula for calculating measures.
+[P1118] Body Text | (empty)
+[P1119] Body Text | HTER = FAR + FRR
+[P1120] Body Text | 2
+[P1121] Body Text | FAR = 	FP
+[P1122] Body Text | Fake samples
+[P1123] Body Text | & FRR = 	FN
+[P1124] Body Text | Genuine Samples
+[P1125] Body Text | ACER = APCER + BPCER
+[P1126] Body Text | 2
+[P1127] Body Text | where APCER = 	FP
+[P1128] Body Text | FP + FN
+[P1129] Body Text | BPCER =   FN
+[P1130] Body Text | FN + TP
+[P1131] Heading 1 | RQ 5 Limitations of Face Liveness Detection Methods
+[P1132] Normal | (empty)
+[P1133] Body Text | (1)
+[P1134] Body Text | (empty)
+[P1135] Body Text | (2)
+[P1136] Body Text | (empty)
+[P1137] Body Text | (3)
+[P1138] Body Text | (empty)
+[P1139] Body Text | (4)
+[P1140] Body Text | (empty)
+[P1141] Body Text | (5)
+[P1142] Body Text | (empty)
+[P1143] Body Text | (6)
+[P1144] Body Text | (empty)
+[P1145] Body Text | Despite recent and considerable improvements in the development of detection al- gorithms, presentation attacks remain difficult for the research community. Section 6.1 discusses the challenges in existing databases, followed by Section 6.2, which discusses challenges faced by existing liveness detection methods.
+[P1146] List Paragraph | Limitations Existing Databases for Face Liveness Detection
+[P1147] Body Text | Face liveness Detection datasets are still limited in volume and diversity in terms of the types of spoofing attacks, spoof attack instruments, and acquisition devices employed for real faces, PAs, and maybe PAIs (compared to other face-related difficulties). There is currently no publicly available large-scale face PAD, although multiple such datasets exist for face recognition. It was discovered that none of the databases contained images of all known forms of spoofing attacks. The majority of published datasets cover two to three forms of spoofing attacks. Furthermore, some collections have images specialized to a specific sort of attack. Because no such dataset exists, the researchers should work on
+[P1148] Body Text | (empty)
+[P1149] Body Text | (empty)
+[P1150] Body Text | (empty)
+[P1151] Body Text | several datasets to construct the Face Liveness Detection System. A dataset that covers all known types of attacks in a single dataset is required to build a robust Face Liveness Detection model against all known attacks. Detecting a face presentation attack is a difficult task. However, face PAD approaches are currently limited in performance due to the learning dataset’s lack of quantity and diversity.
+[P1152] List Paragraph | Limitations of Existing Face Liveness Detection Techniques
+[P1153] Body Text | Despite recent advances in presentation attack detection approaches, unseen attack detection remains a complex subject. Existing solutions demonstrated promising results when tested using specific attacks in a controlled environment or public datasets. PAD models trained on predetermined attacks produce favorable results but are skewed toward specific attacks. The current face PAD approaches still fall short of most real-world require- ments (especially generalization ability). When there isn’t too much discrepancy between the conditions of actual face capture for enrolment and genuine face/PA presentation for authentication, the results are satisfactory (intra-database evaluation). However, they have a limited generalization capacity because handcrafted features are not powerful enough to capture all conceivable variations in acquisition settings.
+[P1154] Body Text | Moreover, because the features learned by deep neural networks are of relatively high dimensions compared to the training data’s restricted size, Over-fitting affects both features, resulting in poor generalization ability. Learning traits that distinguish between a genuine face and any spoofing attack, presumably in various capture conditions, is still a research problem. The sensitivity of face recognition systems to numerous face artifacts has been studied extensively, and different PAD strategies to identify these abnormalities have developed. Despite these efforts, there are still several obstacles and unresolved issues.
+[P1155] Heading 1 | RQ6 Future Directions
+[P1156] Body Text | This section discusses various scientific challenges prior face liveness detection experi- ments have not addressed. These issues include a significant amount of work that must be done to improve the performance of the various face-liveness detection systems. The following is a summary of several difficulties encountered in research, along with potential answers to those difficulties:
+[P1157] Body Text | Challenge 1: DL models are sometimes characterized as a “black box” because it is
+[P1158] Body Text | difficult to determine their sources. As a result, an approach for automatic (parameter) optimization is required: Finding the ideal layer layout and node number values for various layers is another difficult task. The choice of parameters for the number of epochs, learning rate, and regularized strength also requires a basic understanding of the domain. Automatic optimization techniques for various DL architecture components for datasets and additional clinical datasets could be introduced as a result.
+[P1159] Heading 1 | Future directions for research: Explainable AI (XAI).
+[P1160] Body Text | Explainable AI (XAI) is a type of artificial intelligence (AI) that enables people to comprehend the results of a solution. It contrasts with machine learning’s “black box” char- acter, in which even the AI’s architects cannot explain why it made a particular conclusion. However, users gradually delegate more computer duties as automation becomes more common. Users may find it challenging to comprehend such complicated systems because they often create “black box” Artificial Intelligence (AI). Deep learning can sometimes achieve remarkable results by focusing on incorrect/biased dataset-related information rather than domain-relevant information. Regarding the interpretability approach, the author [147] chose Grad-CAM since it allows us to obtain class-specific explanations and provides explanations for each layer of the network.
+[P1161] Body Text | Challenge 2: In real-world circumstances, however, everyday unlabeled face data
+[P1162] Body Text | is continuously collected from various face recognition terminals, which might use for semi-supervised learning. One challenge is figuring out how to make the most of unlabeled unbalanced (i.e., live or fake) data while minimizing performance drops. Furthermore,
+[P1163] Body Text | (empty)
+[P1164] Body Text | (empty)
+[P1165] Body Text | (empty)
+[P1166] Body Text | appropriate data augmentation procedures for FAS are rarely studied. Adversarial learning could be a strong fit for adaptive data augmentation across various areas.
+[P1167] Heading 1 | Future directions for research: Adversarial Learning.
+[P1168] Body Text | However, improving recognition efficiency in a more complex FR model is not enough; the system should endure various attacks aimed at its competency. Researchers recently dis- covered that (deep) FR systems are vulnerable to several attacks that produce data changes to deceive classifiers. These attacks are carried out in two ways: (a) physically altering the physical look before capturing a photograph or (b) digitally altering the captured face image. On the other hand, adversarial attacks and the variations that result from morphing attacks are essential strategies for digital invasion. However, adversarial attacks are mainly classified as digital attacks, some tactics designed to carry out physically. Adversarial at- tacks are noteworthy because they typically target deep neural networks (DNN) and focus on convolutional neural networks (CNN) used to build state-of-the-art FR models [148]. It is crucial in black-box attacks because access to the target model, the training dataset, and other learning parameters is impossible. A substitute neural network model trained in such situations can generate adversarial instances against the substitute model [149]. The target model would expose to these adversarial situations due to its transferability.
+[P1169] Body Text | A new research area might be the security of CNN-based anti-spoofing against the challenges posed by the vulnerability of DL architectures to adversarial samples. The intersection of biometric anti-spoofing and adversarial attacks raises many new challenges, especially considering how quickly both fields are evolving.
+[P1170] Body Text | Aside from the above-mentioned future study, the authors suggest further research directions in robust face presentation attack detection (FPAD) systems.
+[P1171] Body Text | Challenge 3: Face images from various input disseminations and diverse spoof attacks
+[P1172] Body Text | can build an FLD model with strong generalization. It is a fact that training data (both genuine and fake photos) is not shared due to concerns about legal and privacy. Further research needs to be done to address the concerns of data privacy.
+[P1173] Heading 1 | Future directions for research: Federated Learning.
+[P1174] Body Text | Federated learning is a machine learning algorithm that works collaboratively without relying on centralized training data. It is a type of machine learning that’s decentralized. However, a Federated Face Presentation Attack Detection (FedPAD) architecture proposes to address this issue [147], which takes advantage of extensive face PAD data available from diverse data owners while ensuring data privacy. Each data owner (known as a data center) trains its face PAD model locally in a Federated PAD architecture. A server learns a global face PAD model by repeatedly aggregating model changes from all data centers without gaining access to private data in each one.
+[P1175] Body Text | The goal of federated learning is to address the issue of data set privacy. However, it ignores privacy concerns at the model level for FAS because training the global model necessi- tates numerous teams sharing their local models, potentially harming economic competition. Challenge 4: New face presentation attack methods are continually developed, result-
+[P1176] Body Text | ing in new spoofing faces that compromise existing face liveness detectors. It necessitates researchers to collect many samples to train classifiers to identify more contemporary assaults, which is typically expensive and leads to newly evolved attack samples remaining in tiny sizes.
+[P1177] Heading 1 | Future directions for research: Meta-Learning.
+[P1178] Body Text | Face anti-spoofing is a few-shot learning problem with emerging new threats de- scribed. Meta Face Anti-spoofing proposes a revolutionary face anti-spoofing strategy based on meta-learning (Meta-FAS). Meta-Learning is also term as Learning by Learn- ing. Most existing works use Domain Adaptation (DA) or Domain Generalization (DG) methodologies to overcome insufficient abstraction to unknown attacks.
+[P1179] Body Text | However, during training, the target domain is frequently unclear, limiting the use of DA approaches. Without seeing any target data, DG techniques can overcome this by learning domain invariant features. On the other hand, they fail to use the target data’s contents. A self-domain adaptation paradigm proposes an inference that uses unlabeled
+[P1180] Body Text | (empty)
+[P1181] Body Text | (empty)
+[P1182] Body Text | (empty)
+[P1183] Body Text | test domain data [150]. A Dual-Branch Meta-learning Network (DBMNet) is explored to extract features from unseen domains [151–153].
+[P1184] Body Text | Furthermore, a new approach for face anti-spoofing to extract discriminated features from domain-specific information in the test domain to improve performance is needed.
+[P1185] Body Text | Challenge 5: Existing texture-based feature extraction approaches often use the entire
+[P1186] Body Text | image as input and extract features from there, ignoring that different portions of the image have varying degrees of importance. Nonetheless, an input image’s data is made up of a variety of discriminative components with varying degrees of discrimination. Because of differences in attack instrument and lighting, the useful discriminatory information for liveness recognition is scattered throughout the image. Consequently, the full potential of the local representation for discriminative face liveness detection is not tapped when patches are randomly selected from the face region. For more accurate and reliable face liveness detection, it is crucial to know how to find the discriminative regions better.
+[P1187] Heading 1 | Future directions for research: Reinforcement Learning.
+[P1188] Body Text | Reinforcement learning (RL) is a branch of machine learning that studies how in- telligent creatures should behave in a given environment to maximize the concept of cumulative reward. Deep reinforcement learning also offers a wide range of applications in the face-related research field. A combination of DRL (Deep Reinforcement Learning) and RNN has been used to exploit global and local features jointly with global Feature Extraction using ResNet18 [54]. Moreover, the deep reinforcement learning method is applied to guarantee the consistency of the visual identity in synthesized faces. In addition, a researcher suggested an ethnicity balance network based on reinforcement learning to learn superior performance for multiple ethnicity’s face recognition based on huge margin losses. However, applying deep reinforcement learning methods still has space for devel- opment. It would be interesting to explore how RL can extract salience features for Face liveness detection.
+[P1189] Body Text | Challenge 6: Within one or more small-size datasets, classic evaluation techniques for
+[P1190] Body Text | Face presentation attacks commonly consider intra-domain, cross-domain, and cross-type test- ing. Because the data amount, especially in the testing set, is relatively small. State-of-the-art methods in such protocols cannot guarantee consistently good performance in practical scenar- ios. The protocols focus on a single factor, such as seen/unseen domains or known/unknown attack types, which cannot satisfy the need for complex real-world scenarios.
+[P1191] Heading 1 | Future directions for research: need to find a solution (protocol) for complex real- world scenarios.
+[P1192] Body Text | GrandTest and open-set [152] are two recent proposals for more realistic protocols. Open-set testing analyses models discriminating and generalization capabilities on known and unknown attack types, while Grand Test comprises large-scale mixed-domain data [107]. On the other hand, real-world open-set situations with multiple domains and assault kinds continue to be overlooked.
+[P1193] Body Text | More comprehensive protocols (e.g., domain- and type-aware open-set) should be investigated to bridge the gap between academics and industry. In the case of multi-modal protocols, training data with multiple modalities is expected, and two testing settings are commonly used: 1) with multiple corresponding modalities and 2) with only one modal- ity [54] (usually RGB). However, depending on the user terminal device, multiple modality combinations (e.g., RGB-NIR, RGB-D, NIR-D, and RGB-DNIR) are used in real-world deployment. As a result, training individual models for each multi-modal combination is expensive and inefficient. Although cross-modality translation creates false modalities, their fidelity, and stability are still inferior to modalities obtained from real-world sensors. An alternative route for endless multi-modal deployment could be to build a dynamic multi-modal framework that propagates learned multi-modal information to multiple modality combinations.
+[P1194] Body Text | Challenge 7: The need to establish new approaches in face liveness detection involves
+[P1195] Body Text | explainability has been discussed in earlier sections. It is observed that No standard exists for evaluating and testing AI explanation algorithms. It is tempting to analyze explanation
+[P1196] Body Text | (empty)
+[P1197] Body Text | (empty)
+[P1198] Body Text | (empty)
+[P1199] Body Text | frameworks to compare their quality. According to Explainable AI, an “accurate” explana- tion does not mean the system gave the correct response. Thus, the biometrics community must move from “decision accuracy measures” to “performance metrics for explanations,” which have yet to be produced.
+[P1200] Normal | Future directions for research: need to explore experimentations to find a perfor-
+[P1201] Body Text | mance measure for explanations.
+[P1202] Heading 1 | Discussion
+[P1203] Body Text | This systematic review examined various academic research articles on face presenta- tion attack detection using AI-based techniques. The authors answered research questions through a systematic review using the PRISMA protocol. Such as varied challenges and problems associated with the different face spoofing attacks, datasets, face presentation at- tack detection using artificial intelligence-based approaches used for robust face recognition systems, and future directions as follows:
+[P1204] Body Text | Various feature extraction methods, such as handcrafted feature-based extraction, texture-based, motion-based, and depth-based methods, and the fusion of multiple feature extraction methods, are proposed in the literature. Face anti-spoofing systems use a com- bination of machine learning and deep learning algorithms to achieve optimum accuracy in seeing false and real faces. Even while these approaches offer correct findings for the existing types of attacks, they are vulnerable to invisible attacks or attacks that are unable to detect by the systems. Due to their lack of generalization capacity, existing approaches cannot detect invisible attacks (such as synthetic faces).
+[P1205] Body Text | Public datasets are still a long way from accurately reproducing real-world applica- tions. It is likely owing to the difficulties of gathering PAs and PAIs from impostors in the wild. As a result, most PA examples are obtained manually, which is time-consuming and exhausting. Moreover, generating a large-scale dataset for face anti-spoofing in the wild covers numerous real-world applicative contexts. When faced with these challenges, some researchers rely on data augmentation techniques to create synthetic (yet realistic) photographs of PA.
+[P1206] Body Text | Face presentation attack detection (FAD) problems use various artificial intelligence- based approaches. Due to AI-based advancements, the classification of fake or real spoofs for robust face recognition systems has become possible. Literature looks at AI-based models, such as convolutional neural networks, transfer learning, domain adaptation, domain generalization, generative adversarial network, reinforcement learning, explainable AI, etc.
+[P1207] Body Text | The handcrafted feature-based face liveness detection methods are considered to be more robust against the unknown data samples (data samples not being considered during training of the AI-based face FLD techniques). The deep learning stacks of neural networks are more reliable in performance, especially in cases where training and testing data samples are very similar. For unknown attacks such as synthetic faces (artificially created), the fusion of handcrafted and auto-extracted (through deep learning) features may perform promisingly with the help of AI techniques.
+[P1208] Body Text | In the future, to improve the robustness of existing face liveness detection techniques, domain adaption, and generalization strategies, investigate further to deal with undetected or unseen attacks. To make existing algorithms more robust, considering employing multi- ple algorithms together for decision-making using either federated learning or decision fusion would be the further research direction in the field.
+[P1209] Heading 1 | Conclusions
+[P1210] Body Text | Face recognition using biometric identification techniques is widely used nowadays but has many potential threats. Though there has been active research for AI-based robust face recognition systems, researchers are still striving to get a full-proof solution. This paper examined many types of face presentation attacks and detection strategies for robust anti- spoofing using AI-based solutions. The study’s key findings are the challenges existing face
+[P1211] Body Text | (empty)
+[P1212] Body Text | (empty)
+[P1213] Body Text | (empty)
+[P1214] Body Text | liveness detection systems confront and how they affect the performance of the spoofing model. The research also finds a high-quality publicly available real-world dataset for 2D and 3D spoofing attacks, which would be the foundation for developing robust FPAD systems. It discussed challenges as well as future research goals in the domain of invisible attack detection methods. However, several unique challenges must be addressed before they are employed in real-world face recognition-based authentication systems. Although most current solutions rely on handcrafted features to combat presentation attacks, machine learning and deep learning-based feature extraction methods are also used. Although existing approaches perform better intra-testing, they lack generalization capabilities, which is crucial for unknown threats. In the real-world implementation of face anti- spoofing systems, domain adaptation, and explainable artificial intelligence need to be explored. These discoveries could serve as a foundation for future research toward face anti-spoofing that is secure and robust. The findings of this study would undoubtedly guide the biometric sector in developing safe, efficient, and trustworthy face anti-spoofing systems in the coming years of biometric technological development.
+[P1215] Body Text | (empty)
+[P1216] Normal | Author Contributions: Conceptualization, S.K. and S.G.; methodology, S.K., S.G., K.K. and S.D.T.; writing—original draft preparation, S.K.; writing— review and editing, S.K., S.G., K.K. and S.D.T.; visualization, S.G.; supervision, S.G., K.K. and S.D.T. All authors have read and agreed to the published version of the manuscript.
+[P1217] Normal | Funding: This research received no external funding. Institutional Review Board Statement: Not applicable. Informed Consent Statement: Not applicable.
+[P1218] Normal | Data Availability Statement: Not applicable.
+[P1219] Normal | Conflicts of Interest: The authors declare no conflict of interest.
+[P1220] Heading 1 | References
+[P1221] List Paragraph | Sébastien, M.S.; Nixon, J.F.; Marcel, N.E. Handbook of Biometric Anti-Spoofing, 2nd ed.; Springer: Cham, Switzerland, 2019. [CrossRef]
+[P1222] List Paragraph | Sharma, S.B.; Dhall, I.; Nayak, S.R.; Chatterjee, P. Reliable Biometric Authentication with Privacy Protection. Adv. Commun. Devices Netw. 2023, 902, 233–249.
+[P1223] List Paragraph | Biometrics Recognition Using Deep Learning: A Survey. Available online: https://doi.org/10.1007/s10462-022-10237-x (accessed on 8 December 2022).
+[P1224] List Paragraph | Ross, A.; Jain, A.K. Biometrics, Overview. In Encyclopedia of Biometrics; Springer: Boston, MA, USA, 2015; pp. 289–294. [CrossRef]
+[P1225] List Paragraph | Cabana, P.F. Technical and Legal Challenges of the Use of Automated Facial Recognition Technologies for Law Enforcement and Forensic Purposes. In Artificial Intelligence, Social Harms and Human Rights; Završnik, A., Simoncˇicˇ, K., Eds.; Springer International Publishing: Cham, Switzerland, 2023; pp. 35–54. [CrossRef]
+[P1226] List Paragraph | FRB Report. “Market Research Report,” marketsandmarkets.com, 2021. Available online: https://www.marketsandmarkets. com/PressRelease (accessed on 8 December 2022).
+[P1227] List Paragraph | Kalmani, S.; Dilna, U. Application of Computer Vision for Multi-Layered Security to ATM Machine using Deep Learning Concept. In Proceedings of the 2022 International Conference on Applied Artificial Intelligence and Computing (ICAAIC), Online, 9–11 May 2022; pp. 999–1004. [CrossRef]
+[P1228] List Paragraph | Enhancing Bank Security System using Face Recognition, Iris Scanner and Palm Vein Technology. In Proceedings of the 2018 3rd International Conference On Internet of Things: Smart Innovation and Usages (IoT-SIU), Bhimtal, India, 23–24 February 2018. [CrossRef]
+[P1229] List Paragraph | Ali, O.; AlAhmad, A.; Kahtan, H. A review of advanced technologies available to improve the healthcare performance during COVID-19 pandemic. Procedia Comput. Sci. 2023, 217, 205–216. [CrossRef] [PubMed]
+[P1230] List Paragraph | Martins, B.O.; Lidén, K.; Jumbert, M.G. Border security and the digitalisation of sovereignty: Insights from EU borderwork. Eur. Secur. 2022, 31, 475–494. [CrossRef]
+[P1231] List Paragraph | Andrejevic, M.; Selwyn, N. Facial recognition technology in schools: Critical questions and concerns. Learn. Media Technol. 2020,
+[P1232] Normal | 45, 115–128. [CrossRef]
+[P1233] List Paragraph | SonarGuard: Ultrasonic Face Liveness Detection on Mobile Devices. Available online: https://doi.org/10.1109/tcsvt.2023.3236303 (accessed on 8 December 2022).
+[P1234] List Paragraph | Ming, Z.; Visani, M.; Luqman, M.M.; Burie, J.-C. A Survey on Anti-Spoofing Methods for Facial Recognition with RGB Cameras of Generic Consumer Devices. J. Imaging 2020, 6, 139. [CrossRef]
+[P1235] List Paragraph | (empty)
+[P1236] Body Text | (empty)
+[P1237] Body Text | (empty)
+[P1238] List Paragraph | Liu, H.; Zheng, C.; Li, D.; Shen, X.; Lin, K.; Wang, J.; Zhang, Z.; Zhang, Z.; Xiong, N.N. EDMF: Efficient Deep Matrix Factorization with Review Feature Learning for Industrial Recommender System. IEEE Trans. Ind. Inform. 2022, 18, 4361–4371. [CrossRef]
+[P1239] List Paragraph | Liu, T.; Wang, J.; Yang, B.; Wang, X. NGDNet: Nonuniform Gaussian-label distribution learning for infrared head pose estimation and on-task behavior understanding in the classroom. Neurocomputing 2021, 436, 210–220. [CrossRef]
+[P1240] List Paragraph | Liu, T.; Wang, J.; Yang, B.; Wang, X. Facial expression recognition method with multi-label distribution learning for non-verbal behavior understanding in the classroom. Infrared Phys. Technol. 2021, 112, 103594. [CrossRef]
+[P1241] List Paragraph | Liu, H.; Liu, T.; Zhang, Z.; Sangaiah, A.K.; Yang, B.; Li, Y. ARHPE: Asymmetric Relation-Aware Representation Learning for Head Pose Estimation in Industrial Human–Computer Interaction. IEEE Trans. Ind. Inform. 2022, 18, 7107–7117. [CrossRef]
+[P1242] List Paragraph | Liu, H.; Liu, T.; Chen, Y.; Zhang, Z.; Li, Y.-F. EHPE: Skeleton Cues-based Gaussian Coordinate Encoding for Efficient Human Pose Estimation. IEEE Trans. Multimedia. 2022, 1–12. [CrossRef]
+[P1243] List Paragraph | Liu, H.; Fang, S.; Zhang, Z.; Li, D.; Lin, K.; Wang, J. MFDNet: Collaborative Poses Perception and Matrix Fisher Distribution for Head Pose Estimation. IEEE Trans. Multimedia 2022, 24, 2449–2460. [CrossRef]
+[P1244] List Paragraph | Garg, D.; Jain, P.; Kotecha, K.; Goel, P.; Varadarajan, V. An Efficient Multi-Scale Anchor Box Approach to Detect Partial Faces from a Video Sequence. Big Data Cogn. Comput. 2022, 6, 9. [CrossRef]
+[P1245] List Paragraph | Xie, X.; Bian, J.; Lai, J. Review on face liveness detection. J. Image Graph. 2022, 27, 63–87. [CrossRef]
+[P1246] List Paragraph | Costa-Pazo, A.; Pérez-Cabo, D.; Jiménez-Cabello, D.; Alba-Castro, J.L.; Vazquez-Fernandez, E. Face presentation attack detection. A comprehensive evaluation of the generalisation problem. IET Biom. 2021, 10, 408–429. [CrossRef]
+[P1247] List Paragraph | Khade, S.; Gite, S.; Pradhan, B. Iris Liveness Detection Using Multiple Deep Convolution Networks. Big Data Cogn. Comput. 2022,
+[P1248] Normal | 6, 67. [CrossRef]
+[P1249] List Paragraph | Khade, S.; Gite, S.; Thepade, S.D.; Pradhan, B.; Alamri, A. Detection of Iris Presentation Attacks Using Feature Fusion of Thepade’s Sorted Block Truncation Coding with Gray-Level Co-Occurrence Matrix Features. Sensors 2021, 21, 7408. [CrossRef]
+[P1250] List Paragraph | Zhang, M.; Zeng, K.; Wang, J. A Survey on Face Anti-Spoofing Algorithms. J. Inf. Hiding Priv. Prot. 2020, 2, 21–34. [CrossRef]
+[P1251] List Paragraph | Raheem, E.A.; Ahmad, S.M.S.; Adnan, W.A.W. Insight on face liveness detection: A systematic literature review. Int. J. Electr. Comput. Eng. 2019, 9, 5165–5175. [CrossRef]
+[P1252] List Paragraph | Ramachandra, R.; Busch, C. Presentation Attack Detection Methods for Face Recognition Systems: A comprehensive survey.
+[P1253] Normal | ACM Comput. Surv. 2017, 50, 1–37. [CrossRef]
+[P1254] List Paragraph | Komulainen, J.; Boulkenafet, Z.; Akhtar, Z. Review of Face Presentation Attack Detection Competitions; Springer International Publishing: Cham, Switzerland, 2019; pp. 291–317. [CrossRef]
+[P1255] List Paragraph | Yu, Z.; Qin, Y.; Li, X.; Zhao, C.; Lei, Z.; Zhao, G. Deep Learning for Face Anti-Spoofing: A Survey. arXiv 2021. Available online: http://arxiv.org/abs/2106.14948 (accessed on 8 December 2022).
+[P1256] List Paragraph | Abdullakutty, F.; Elyan, E.; Johnston, P. A review of state-of-the-art in Face Presentation Attack Detection: From early development to advanced deep learning and multi-modal fusion methods. Inf. Fusion 2021, 75, 55–69. [CrossRef]
+[P1257] List Paragraph | Purnapatra, S.; Smalt, N.; Bahmani, K.; Das, P.; Yambay, D.; Mohammadi, A.; George, A.; Bourlai, T.; Marcel, S.; Schuckers, S.; et al. Face Liveness Detection Competition (LivDet-Face)—2021. IEEE Int. Jt. Conf. Biom. IJCB 2021, 1–10. [CrossRef]
+[P1258] List Paragraph | Kowalski, M. A Study on Presentation Attack Detection in Thermal Infrared. Sensors 2020, 20, 3988. [CrossRef]
+[P1259] List Paragraph | Ghaffar, I.A.; Mohd, M.N.H. Presentation attack detection for face recognition on smartphones: A comprehensive review. J. Telecommun. Electron. Comput. Eng. 2017, 9, 33–38.
+[P1260] List Paragraph | Kenneth, M.O.; Sulaimon, B.A.; Abdulhamid, S.M.; Ochei, L.C. A Systematic Literature Review on Face Morphing Attack Detection (MAD). Illum. Artif. Intell. Cybersecur. Forensics 2022, 109, 139–172. [CrossRef]
+[P1261] List Paragraph | A Bibliometric Analysis of Face Presentation Attacks based on Domain Adaptation. Available online: https://digitalcommons. unl.edu/libphilprac/5454/ (accessed on 18 December 2022).
+[P1262] List Paragraph | Moher, D.; Liberati, A.; Tetzlaff, J.; Altman, D.G. Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement. BMJ 2009, 339, 332–336. [CrossRef]
+[P1263] List Paragraph | Panic, N.; Leoncini, E.; de Belvis, G.; Ricciardi, W.; Boccia, S. Evaluation of the Endorsement of the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) Statement on the Quality of Published Systematic Review and Meta-Analyses. PLoS ONE 2013, 8, e83138. [CrossRef]
+[P1264] List Paragraph | Rathgeb, C.; Drozdowski, P.; Busch, C. Detection of Makeup Presentation Attacks based on Deep Face Representations. Int. Conf.
+[P1265] Normal | Pattern Recognit. (ICPR) 2021, 3443–3450. [CrossRef]
+[P1266] List Paragraph | Boulkenafet, Z.; Komulainen, J.; Li, L.; Feng, X.; Hadid, A. OULU-NPU: A mobile face presentation attack database with real-world variations. In Proceedings of the 2017 12th IEEE International Conference on Automatic Face & Gesture Recognition (FG 2017), Washington, DC, USA, 30 May–3 June 2017; pp. 612–618. [CrossRef]
+[P1267] List Paragraph | On the Effectiveness of Local Binary Patterns in Face Anti-Spoofing. Available online: https://www.semanticscholar.org/paper/ On-the-effectiveness-of-local-binary-patterns-in-Chingovska-Anjos/30648c20ffa148e2d15cb705abfb8a1650f652df (accessed on 18 December 2022).
+[P1268] List Paragraph | Agarwal, A.; Yadav, D.; Kohli, N.; Singh, R.; Vatsa, M.; Noore, A. Face Presentation Attack with Latex Masks in Multispectral Videos. IEEE Comput. Soc. Conf. Comput. Vis. Pattern Recognit. Workshops 2017, 275–283. [CrossRef]
+[P1269] List Paragraph | Erdogmus, N.; Marcel, S. Spoofing in 2D face recognition with 3D masks and anti-spoofing with Kinect. In Proceedings of the IEEE 6th International Conference on Biometrics: Theory, Applications and Systems, BTAS, Arlington, VA, USA, 29 September 2013; pp. 1–6. [CrossRef]
+[P1270] List Paragraph | (empty)
+[P1271] Body Text | (empty)
+[P1272] Body Text | (empty)
+[P1273] List Paragraph | Tan, X.; Li, Y.; Liu, J.; Jiang, L. Face liveness detection from a single image with sparse low rank bilinear discriminative model. In Proceedings of the European Conference on Computer Vision, Heraklion, Greece, 5–11 September 2010; pp. 504–517. [CrossRef]
+[P1274] List Paragraph | de Souza, G.B.; Papa, J.P.; Marana, A.N. On the Learning of Deep Local Features for Robust Face Spoofing Detection. In Proceedings of the 31st Conference on Graphics, Patterns and Images, SIBGRAPI, Paraná, Brazil, 29 October–1 November 2018;
+[P1275] Normal | pp. 258–265. [CrossRef]
+[P1276] List Paragraph | Li, J.; Zhang, X.; Zhang, Y.; Wang, H.; Yang, F. Face Liveness Detection Based on Multiple Feature Descriptors. In Proceedings of the 2019 International Conference on Technologies and Applications of Artificial Intelligence, TAAI, Kaohsiung, Taiwan, 21–23 November 2019; pp. 1–5. [CrossRef]
+[P1277] List Paragraph | Shilpa, S.; Sajeena, A. Hybrid Deep Learning Approach for Face Spoofing Detection. In Proceedings of the International Conference on Intelligent Computing and Control Systems, ICCS, Madurai, India, 15–17 May 2019; pp. 412–416. [CrossRef]
+[P1278] List Paragraph | Chen, B.; Yang, W.; Wang, S. Generalized Face Antispoofing by Learning to Fuse Features from High- and Low-Frequency Domains. IEEE MultiMedia 2021, 28, 56–64. [CrossRef]
+[P1279] List Paragraph | Nguyen, D.T.; Pham, T.D.; Baek, N.R.; Park, K.R. Combining Deep and Handcrafted Image Features for Presentation Attack Detection in Face Recognition Systems Using Visible-Light Camera Sensors. Sensors 2018, 18, 699. [CrossRef]
+[P1280] List Paragraph | Perumal, R.S.; Santosh, K.C.; Chandra Mouli, P.V.S.S.R. Learning Deep Feature Representation for Face Spoofing. In Recent Trends in Image Processing and Pattern Recognition. RTIP2R 2018. Communications in Computer and Information Science; Springer Nature: Singapore, 2019; Volume 1035, pp. 178–185.
+[P1281] List Paragraph | Song, X.; Zhao, X.; Fang, L.; Lin, T. Discriminative representation combinations for accurate face spoofing detection. Pattern Recognit. 2019, 85, 220–231. [CrossRef]
+[P1282] List Paragraph | Zuo, Y.; Gao, W.; Wang, J. Face Liveness Detection Algorithm based on Livenesslight Network. In Proceedings of the 2020 International Conference on High Performance Big Data and Intelligent Systems, HPBD and IS, Shenzhen, China, 23 May 2020;
+[P1283] Normal | pp. 1–5. [CrossRef]
+[P1284] List Paragraph | Wen, D.; Han, H.; Jain, A.K. Face Spoof Detection With Image Distortion Analysis. IEEE Trans. Inf. Forensics Secur. 2015, 10, 746–761. [CrossRef]
+[P1285] List Paragraph | Chen, B.; Yang, W.; Li, H.; Wang, S.; Kwong, S. Camera Invariant Feature Learning for Generalized Face Anti-Spoofing. IEEE Trans. Inf. Forensics Secur. 2021, 16, 2477–2492. [CrossRef]
+[P1286] List Paragraph | Cai, R.; Li, H.; Wang, S.; Chen, C.; Kot, A.C. DRL-FAS: A Novel Framework Based on Deep Reinforcement Learning for Face Anti-Spoofing. IEEE Trans. Inf. Forensics Secur. 2021, 16, 937–951. [CrossRef]
+[P1287] List Paragraph | Guo, J.; Zhu, X.; Xiao, J.; Lei, Z.; Wan, G.; Li, S.Z. Improving Face Anti-Spoofing by 3D Virtual Synthesis. In Proceedings of the 2019 International Conference on Biometrics (ICB), Crete, Greece, 4–7 June 2019. [CrossRef]
+[P1288] List Paragraph | Zhang, Z.; Yan, J.; Liu, S.; Lei, Z.; Yi, D.; Li, S.Z. A face antispoofing database with diverse attacks. In Proceedings of the 2012 5th IAPR International Conference on BIOMETRICS (ICB), New Delhi, India, 29 March–1 April 2012; pp. 26–31. [CrossRef]
+[P1289] List Paragraph | Li, H.; Wang, S.; He, P.; Rocha, A.D.R. Face Anti-Spoofing with Deep Neural Network Distillation. IEEE J. Sel. Top. Signal Process.
+[P1290] Normal | 2020, 14, 933–946. [CrossRef]
+[P1291] List Paragraph | Yang, J.; Lei, Z.; Yi, D.; Li, S.Z. Person-Specific Face Antispoofing with Subject Domain Adaptation. IEEE Trans. Inf. Forensics Secur.
+[P1292] Normal | 2015, 10, 797–809. [CrossRef]
+[P1293] List Paragraph | Transfer Learning Using Convolutional Neural Networks for Face Anti-Spoofing. Available online: https://doi.org/10.1007/978- 3-319-59876-5_4 (accessed on 8 December 2022).
+[P1294] List Paragraph | Vareto, R.H.; Diniz, M.A.; Schwartz, W.R. Face De-spoofing: Anti-spoofing via Noise Modeling. Progress in Pattern Recognition, Image Analysis, Computer Vision, and Applications. CIARP 2019. Lect. Notes Comput. Sci. 2019, 11217, 187–197. [CrossRef]
+[P1295] List Paragraph | Liu, Y.; Stehouwer, J.; Jourabloo, A.; Liu, X. Deep Tree Learning for Zero-Shot Face Anti-Spoofing. Proc. IEEE Comput. Soc. Conf. Comput. Vis. Pattern Recognit. 2019, 4675–4684. [CrossRef]
+[P1296] List Paragraph | Vareto, R.H.; Schwartz, W.R. Face spoofing detection via ensemble of classifiers toward low-power devices. Pattern Anal. Appl.
+[P1297] Normal | 2020, 24, 511–521. [CrossRef]
+[P1298] List Paragraph | Zhang, B.; Tondi, B.; Barni, M. Adversarial examples for replay attacks against CNN-based face recognition with anti-spoofing capability. Comput. Vis. Image Underst. 2020, 197–198, 102988. [CrossRef]
+[P1299] List Paragraph | Rehman, Y.A.U.; Po, L.M.; Liu, M. Deep learning for face anti-spoofing: An end-to-end approach. Signal Processing—Algorithms, Architectures, Arrangements, and Applications Conference Proceedings, SPA. IEEE 2017, 195–200. [CrossRef]
+[P1300] List Paragraph | Ying, X.; Li, X.; Chuah, M.C. LiveFace: A Multi-task CNN for Fast Face-Authentication. In Proceedings of the 17th IEEE International Conference on Machine Learning and Applications, ICMLA, Orlando, FL, USA, 17–20 December 2018; pp. 955–960. [CrossRef]
+[P1301] List Paragraph | Nikitin, M.Y.; Konushin, V.S.; Konushin, A.S. Face anti-spoofing with joint spoofing medium detection and eye blinking analysis.
+[P1302] Normal | Comput. Opt. 2019, 43, 618–626. [CrossRef]
+[P1303] List Paragraph | Chen, H.; Hu, G.; Lei, Z.; Chen, Y.; Robertson, N.M.; Li, S.Z. Attention-Based Two-Stream Convolutional Networks for Face Spoofing Detection. IEEE Trans. Inf. Forensics Secur. 2019, 15, 578–593. [CrossRef]
+[P1304] List Paragraph | Erdogmus, N.; Marcel, S. Spoofing Face Recognition With 3D Masks. IEEE Trans. Inf. Forensics Secur. 2014, 9, 1084–1097.
+[P1305] Normal | [CrossRef]
+[P1306] List Paragraph | Te, G.; Hu, W.; Guo, Z. Exploring Hypergraph Representation On Face Anti-Spoofing Beyond 2d Attacks. In Proceedings of the IEEE International Conference on Multimedia and Expo (ICME), London, UK, 6–10 July 2020; pp. 1–6. [CrossRef]
+[P1307] List Paragraph | (empty)
+[P1308] Body Text | (empty)
+[P1309] Body Text | (empty)
+[P1310] List Paragraph | Agarwal, A.; Singh, R.; Vatsa, M. Face anti-spoofing using Haralick features. In Proceedings of the 2016 IEEE 8th International Conference on Biometrics Theory, Applications and Systems (BTAS), Niagara Falls, NY, USA, 6–9 September 2016. [CrossRef]
+[P1311] List Paragraph | Bousnina, N.; Zheng, L.; Mikram, M.; Ghouzali, S.; Minaoui, K. Unraveling robustness of deep face anti-spoofing models against pixel attacks. Multimedia Tools Appl. 2021, 80, 7229–7246. [CrossRef]
+[P1312] List Paragraph | Mehta, S.; Uberoi, A.; Agarwal, A.; Vatsa, M.; Singh, R. Crafting A Panoptic Face Presentation Attack Detector. In Proceedings of the 2019 International Conference on Biometrics, ICB 2019, Crete, Greece, 4–7 June 2019. [CrossRef]
+[P1313] List Paragraph | Tu, X.; Zhang, H.; Xie, M.; Luo, Y.; Zhang, Y.; Ma, Z. Deep transfer across domains for face antispoofing. J. Electron. Imaging
+[P1314] Normal | 2019, 28. [CrossRef]
+[P1315] List Paragraph | Chen, B.; Yang, W.; Wang, S. Face Anti-Spoofing by Fusing High and Low Frequency Features for Advanced Generalization Capability. In Proceedings of the 3rd International Conference on Multimedia Information Processing and Retrieval, MIPR 2020, Guangdong, China, 6–8 August 2020; pp. 199–204. [CrossRef]
+[P1316] List Paragraph | Shao, R.; Lan, X.; Li, J.; Yuen, P.C. Multi-Adversarial Discriminative Deep Domain Generalization for Face Presentation Attack Detection. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, San Juan, PR, USA, 17–19 June 1997; pp. 10015–10023. [CrossRef]
+[P1317] List Paragraph | Patel, K.; Han, H.; Jain, A.K. Secure Face Unlock: Spoof Detection on Smartphones. IEEE Trans. Inf. Forensics Secur. 2016, 11,
+[P1318] Normal | 2268–2283. [CrossRef]
+[P1319] List Paragraph | Wang, G.; Han, H.; Shan, S.; Chen, X. Improving Cross-database Face Presentation Attack Detection via Adversarial Domain Adaptation. In Proceedings of the 2019 International Conference on Biometrics, ICB, Crete, Greece, 4–7 June 2019. [CrossRef]
+[P1320] List Paragraph | Muhammad, U.; Hadid, A. Face Anti-spoofing using Hybrid Residual Learning Framework. In Proceedings of the 2019 International Conference on Biometrics, ICB, Crete, Greece, 4–7 June 2019. [CrossRef]
+[P1321] List Paragraph | Nagpal, C.; Dubey, S.R. A Performance Evaluation of Convolutional Neural Networks for Face Anti Spoofing. In Proceedings of the International Joint Conference on Neural Networks, Budapest, Hungary, 14–19 July 2019. [CrossRef]
+[P1322] List Paragraph | Sun, Y.; Xiong, H.; Yiu, S.M. Understanding deep face anti-spoofing: From the perspective of data. Vis. Comput. 2021, 37,
+[P1323] Normal | 1015–1028. [CrossRef]
+[P1324] List Paragraph | Patel, K.; Han, H.; Jain, A.K. Cross-Database Face Antispoofing with Robust Feature Representation. Available online: https:
+[P1325] Normal | //doi.org/10.1007/978-3-319-46654-5_67 (accessed on 8 December 2022).
+[P1326] List Paragraph | Galbally, J.; Satta, R. Three-dimensional and two-and-a-half-dimensional face recognition spoofing using three-dimensional printed models. IET Biom. 2016, 5, 83–91. [CrossRef]
+[P1327] List Paragraph | Steiner, H.; Kolb, A.; Jung, N. Reliable face anti-spoofing using multispectral SWIR imaging. In Proceedings of the 2016 International Conference on Biometrics, ICB, Halmstad, Sweden, 13–16 June 2016. [CrossRef]
+[P1328] List Paragraph | Jia, S.; Guo, G.; Xu, Z. A survey on 3D mask presentation attack detection and countermeasures. Pattern Recognit. 2020, 98, 107032.
+[P1329] Normal | [CrossRef]
+[P1330] List Paragraph | de Freitas, T.; Komulaine, J.; Anjos, A.; De Martino, J.M.; Hadid, A.; Pietikäinen, M.; Marcel, S. PereiraFace Liveness Detection using Dynamic Texture. EURASIP J. Image Video Process 2014, 2, 1–15. Available online: https://jivp.eurasipjournals.com/ content/2014/1/2 (accessed on 8 December 2022).
+[P1331] List Paragraph | Liu, S.; Yang, B.; Yuen, P.C.; Zhao, G. A 3D Mask Face Anti-Spoofing Database with Real World Variations. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, Las Vegas, NV, USA, 26 June–1 July 2016; pp. 1551–1557. [CrossRef]
+[P1332] List Paragraph | Li, X.; Wan, J.; Jin, Y.; Liu, A.; Guo, G.; Li, S.Z. 3DPC-Net: 3D Point Cloud Network for Face Anti-spoofing. In Proceedings of the IJCB 2020—IEEE/IAPR International Joint Conference on Biometrics, Houston, TX, USA, 28 September–1 October 2020. [CrossRef]
+[P1333] List Paragraph | Xu, Z.; Li, S. Learning temporal features using LSTM-CNN architecture for face. In Proceedings of the 2015 IAPR Asian Conference on Pattern Recognition, Kuala Lumpur, Malaysia, 3–6 November 2015; pp. 141–145.
+[P1334] List Paragraph | Thepade, S.; Jagdale, P.; Bhingurde, A.; Erandole, S. Novel Face Liveness Detection Using Fusion of Features and Machine Learning Classifiers. In Proceedings of the 2020 IEEE International Conference on Informatics, IoT, and Enabling Technologies, ICIoT, Doha, Qatar, 2–5 February 2020; pp. 141–145. [CrossRef]
+[P1335] List Paragraph | Manjani, I.; Tariyal, S.; Vatsa, M.; Singh, R.; Majumdar, A. Detecting Silicone Mask-Based Presentation Attack via Deep Dictionary Learning. IEEE Trans. Inf. Forensics Secur. 2017, 12, 1713–1723. [CrossRef]
+[P1336] List Paragraph | Jia, S.; Hu, C.; Guo, G.; Xu, Z. A Database for Face Presentation Attack Using Wax Figure Faces. In Proceedings of the Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), Trento, Italy, 9–10 September 2019; pp. 39–47. [CrossRef]
+[P1337] List Paragraph | Sun, W.; Song, Y.; Chen, C.; Huang, J.; Kot, A.C. Face Spoofing Detection Based on Local Ternary Label Supervision in Fully Convolutional Networks. IEEE Trans. Inf. Forensics Secur. 2020, 15, 3181–3196. [CrossRef]
+[P1338] List Paragraph | Bhattacharjee, S.; Marcel, S. What You Can’t See Can Help You—Extended-Range Imaging for 3D-Mask Presentation Attack Detection. In Proceedings of the 2017 International Conference of the Biometrics Special Interest Group (BIOSIG), Darmstadt, Germany, 20–22 September 2017; pp. 1–7. [CrossRef]
+[P1339] List Paragraph | Liu, Y.; Jourabloo, A.; Liu, X. Learning Deep Models for Face Anti-Spoofing: Binary or Auxiliary Supervision. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, USA, 18–23 June 2018. [CrossRef]
+[P1340] List Paragraph | (empty)
+[P1341] Body Text | (empty)
+[P1342] Body Text | (empty)
+[P1343] List Paragraph | Ito, K.; Kimura, A.; Aoki, T. Performance Evaluation of Face Anti-Spoofing Method Using Deep Metric Learning from a Few Frames of Face Video. In Proceedings of the 2020 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference, APSIPA ASC 2020, Auckland, New Zealand, 7–10 December 2020; pp. 1414–1419.
+[P1344] List Paragraph | Li, X.; Wu, W.; Li, T.; Su, Y.; Yang, L. Face Liveness Detection Based on Parallel CNN. J. Phys. Conf. Ser. 2021, 1549, 042069.
+[P1345] Normal | [CrossRef]
+[P1346] List Paragraph | Liu, A.; Tan, Z.; Wan, J.; Escalera, S.; Guo, G.; Li, S.Z. CASIA-SURF CeFA: A Benchmark for Multi-modal Cross-ethnicity Face Anti-spoofing. In Proceedings of the 2021 IEEE Winter Conference on Applications of Computer Vision (WACV), Waikoloa, HI, USA, 3–7 January 2021; pp. 1178–1186. [CrossRef]
+[P1347] List Paragraph | Liu, A.; Tan, Z.; Li, X.; Wan, J.; Escalera, S.; Guo, G.; Li, S.Z. Static and dynamic fusion for multi-modal cross-ethnicity face anti-spoofing. arXiv 2019, arXiv:Abs/1912.0, 2019.
+[P1348] List Paragraph | Liu, A.; Zhao, C.; Yu, Z.; Wan, J.; Su, A.; Liu, X.; Tan, Z.; Escalera, S.; Xing, J.; Liang, Y.; et al. Contrastive Context-Aware Learning for 3D High-Fidelity Mask Face Presentation Attack Detection. IEEE Trans. Inf. Forensics Secur. 2022, 17, 2497–2507. [CrossRef]
+[P1349] List Paragraph | Arashloo, S.R. Unseen Face Presentation Attack Detection Using Sparse Multiple Kernel Fisher Null-Space. IEEE Trans. Circuits Syst. Video Technol. 2021, 31, 4084–4095. [CrossRef]
+[P1350] List Paragraph | Peixoto, B.; Michelassi, C.; Rocha, A. Face liveness detection under bad illumination conditions. In Proceedings of the 2011 18th IEEE International Conference on Image Processing, Brussels, Belgium, 11–14 September 2011; pp. 3557–3560. [CrossRef]
+[P1351] List Paragraph | Hassanien, A.E. Advances in Intelligent Systems and Computing 723 Mohamed Mostafa Editors. In Proceedings of the the International Conference on Advanced Machine Learning Technologies and Applications (AMLTA2018) 2020, Cairo, Egypt, 22–24 February 2018.
+[P1352] List Paragraph | Li, H.; Li, W.; Cao, H.; Wang, S.; Huang, F.; Kot, A.C. Unsupervised Domain Adaptation for Face Anti-Spoofing. IEEE Trans. Inf. Forensics Secur. 2018, 13, 1794–1809. [CrossRef]
+[P1353] List Paragraph | Ghofrani, A.; Toroghi, R.M.; Tabatabaie, S.M. Attention-Based Face AntiSpoofing of RGB Camera using a Minimal End-2-End Neural Network. Iranian Conference on Machine Vision and Image Processing, MVIP. In Proceedings of the Iranian Conference on Machine Vision and Image Processing, MVIP, Qom, Iran, 18–20 February 2020. [CrossRef]
+[P1354] List Paragraph | Liu, W.; Wei, X.; Lei, T.; Wang, X.; Meng, H.; Nandi, A.K. Data-Fusion-Based Two-Stage Cascade Framework for Multimodality Face Anti-Spoofing. IEEE Trans. Cogn. Dev. Syst. 2021, 14, 672–683. [CrossRef]
+[P1355] List Paragraph | George, A.; Mostaani, Z.; Geissenbuhler, D.; Nikisins, O.; Anjos, A.; Marcel, S. Biometric Face Presentation Attack Detection With Multi-Channel Convolutional Neural Network. IEEE Trans. Inf. Forensics Secur. 2020, 15, 42–55. [CrossRef]
+[P1356] List Paragraph | Amir Mohammadi, S.M.; Bhattacharjee, S. Domain Adaptation for Generalization of Face Presentation Attack Detection in Mobile Settengs with Minimal Information. In Proceedings of the ICASSP 2020–2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 4–8 May 2020; pp. 1001–1005. [CrossRef]
+[P1357] List Paragraph | Nikisins, O.; George, A.; Marcel, S. Domain Adaptation in Multi-Channel Autoencoder based Features for Robust Face Anti- Spoofing. In Proceedings of the 2019 International Conference on Biometrics, ICB, Crete, Greece, 4–7 June 2019. [CrossRef]
+[P1358] List Paragraph | Yu, Z.; Wan, J.; Qin, Y.; Li, X.; Li, S.Z.; Zhao, G. NAS-FAS: Static-Dynamic Central Difference Network Search for Face Anti- Spoofing. IEEE Trans. Pattern Anal. Mach. Intell. 2020, 43, 3005–3023. [CrossRef]
+[P1359] List Paragraph | Komulainen, J.; Hadid, A.; Pietikainen, M. Face spoofing detection from single images using texture and local shape analysis. IET Biom. 2012, 1, 3–10. [CrossRef]
+[P1360] List Paragraph | Boulkenafet, Z.; Komulainen, J.; Hadid, A. Face anti-spoofing based on color texture analysis. In Proceedings of the International Conference on Image Processing, ICIP, Bordeaux, France, 16–19 October 2015; Volume 2015, pp. 2636–2640. [CrossRef]
+[P1361] List Paragraph | Lu, L.; Yu, J.; Chen, Y.; Liu, H.; Zhu, Y.; Liu, Y.; Li, M. LipPass: Lip Reading-based User Authentication on Smartphones Leveraging Acoustic Signals. In Proceedings of the IEEE INFOCOM, Honolulu, HI, USA, 16–19 April 2018; pp. 1466–1474. [CrossRef]
+[P1362] List Paragraph | Singh, A.K.; Joshi, P.; Nandi, G.C. Face recognition with liveness detection using eye and mouth movement. In Proceedings of the 2014 International Conference on Signal Propagation and Computer Technology, ICSPCT, Rajasthan, India, 12–13 July 2014;
+[P1363] Normal | pp. 592–597. [CrossRef]
+[P1364] List Paragraph | Smiatacz, M. Liveness Measurements Using Optical Flow for Biometric Person Authentication. Metrol. Meas. Syst. 2012, 19, 257–268. [CrossRef]
+[P1365] List Paragraph | Li, J.; Wang, Y.; Tan, T.; Jain, A.K. Live face detection based on the analysis of Fourier spectra. Biom. Technol. Hum. Identif. 2004,
+[P1366] Normal | 5404, 296–304. [CrossRef]
+[P1367] List Paragraph | Kollreider, K.; Fronthaler, H.; Bigun, J. Non-intrusive liveness detection by face images. Image Vis. Comput. 2009, 27, 233–244. [CrossRef]
+[P1368] List Paragraph | Ning, X.; Li, W.; Wei, M.; Sun, L.; Dong, X. Face Anti-spoofing based on Deep Stack Generalization Networks. In Proceedings of the 7th International Conference on Pattern Recognition Applications and Methods—ICPRAM 2018, Funchal, Portugal, 16–18 January 2018; pp. 317–323. [CrossRef]
+[P1369] List Paragraph | Li, L.; Feng, X.; Boulkenafet, Z.; Xia, Z.; Li, M.; Hadid, A. An original face anti-spoofing approach using partial convolutional neural network. In Proceedings of the 2016 6th International Conference on Image Processing Theory, Tools and Applications, IPTA, Oulu, Finland, 12–15 December 2016. [CrossRef]
+[P1370] List Paragraph | Tirunagari, S.; Poh, N.; Windridge, D.; Iorliam, A.; Suki, N.; Ho, A.T.S. Detection of Face Spoofing Using Visual Dynamics. IEEE Trans. Inf. Forensics Secur. 2015, 10, 762–777. [CrossRef]
+[P1371] List Paragraph | (empty)
+[P1372] Body Text | (empty)
+[P1373] Body Text | (empty)
+[P1374] List Paragraph | Liu, S.-Q.; Lan, X.; Yuen, P.C. Remote Photoplethysmography Correspondence Feature for 3D Mask Face Presentation Attack Detection. In Computer Vision—ECCV 2018. ECCV 2018. Lecture Notes in Computer Science; Ferrari, V., Hebert, M., Sminchisescu, C., Weiss, Y., Eds.; Springer: Cham, Swizterland, 2018; Volume 11220, pp. 577–594. [CrossRef]
+[P1375] List Paragraph | Yang, J.; Lei, Z.; Li, S.Z. Learn Convolutional Neural Network for Face Anti-Spoofing. 2014. Available online: https://arxiv.org/ abs/1408.5601 (accessed on 15 September 2022).
+[P1376] List Paragraph | Wang, G.; Han, H.; Shan, S.; Chen, X. Unsupervised Adversarial Domain Adaptation for Cross-Domain Face Presentation Attack Detection. IEEE Trans. Inf. Forensics Secur. 2021, 16, 56–69. [CrossRef]
+[P1377] List Paragraph | Wang, Z.; Zhao, C.; Qin, Y.; Zhou, Q.; Qi, G.; Wan, J.; Lei, Z. Exploiting Temporal and Depth Information for Multi-Frame Face Anti-Spoofing. 2018. Available online: https://arxiv.org/abs/1811.05118 (accessed on 10 October 2022).
+[P1378] List Paragraph | 3D Mask Face Anti-Spoofing with Remote Photoplethysmography. Available online: https://doi.org/10.1007/978-3-319-46478- 7_6 (accessed on 10 October 2022).
+[P1379] List Paragraph | Li, H.; Wang, S.; Kot, A.C. Face spoofing detection with image quality regression. In Proceedings of the 2016 6th International Conference on Image Processing Theory, Tools and Applications, IPTA, Oulu, Finland, 12–15 December 2016. [CrossRef]
+[P1380] List Paragraph | Singh, A.K.; Joshi, P.; Nandi, G. Face liveness detection through face structure analysis. Int. J. Appl. Pattern Recognit. 2014, 1,
+[P1381] Normal | 338–360. [CrossRef]
+[P1382] List Paragraph | George, A.; Marcel, S. Deep Pixel-wise Binary Supervision for Face Presentation Attack Detection. In Proceedings of the 2019 International Conference on Biometrics, ICB, Crete, Greece, 4–7 June 2019. [CrossRef]
+[P1383] List Paragraph | Jatain, R.; Jailia, M. Authentication and Facial Expression Analysis System using Deep Transfer Learning Approach. In Proceedings of the 2022 6th International Conference on Computing Methodologies and Communication (ICCMC), Tamil Nadu, India, 29–31 March 2022; pp. 1209–1214. [CrossRef]
+[P1384] List Paragraph | Muhammad, U.; Yu, Z.; Komulainen, J. Self-supervised 2D face presentation attack detection via temporal sequence sampling.
+[P1385] Normal | Pattern Recognit. Lett. 2022, 156, 15–22. [CrossRef]
+[P1386] List Paragraph | Li, Z.; Cai, R.; Li, H.; Lam, K.-Y.; Hu, Y.; Kot, A.C. One-Class Knowledge Distillation for Face Presentation Attack Detection. IEEE Trans. Inf. Forensics Secur. 2022, 17, 2137–2150. [CrossRef]
+[P1387] List Paragraph | Li, H.; He, P.; Wang, S.; Rocha, A.; Jiang, X.; Kot, A.C. Learning Generalized Deep Feature Representation for Face Anti-Spoofing.
+[P1388] Normal | IEEE Trans. Inf. Forensics Secur. 2018, 13, 2639–2652. [CrossRef]
+[P1389] List Paragraph | Zhou, F.; Gao, C.; Chen, F.; Li, C.; Li, X.; Yang, F.; Zhao, Y. Face Anti-Spoofing Based on Multi-layer Domain Adaptation. In Proceedings of the 2019 IEEE International Conference on Multimedia & Expo Workshops, Shanghai, China, 8–12 July 2019;
+[P1390] Normal | pp. 192–197. [CrossRef]
+[P1391] List Paragraph | Qin, Y.; Zhang, W.; Shi, J.; Wang, Z.; Yan, L. One-class adaptation face anti-spoofing with loss function search. Neurocomputing
+[P1392] Normal | 2020, 417, 384–395. [CrossRef]
+[P1393] List Paragraph | Sun, W.; Song, Y.; Zhao, H.; Jin, Z. A Face Spoofing Detection Method Based on Domain Adaptation and Lossless Size Adaptation.
+[P1394] Normal | IEEE Access 2020, 8, 66553–66563. [CrossRef]
+[P1395] List Paragraph | Liu, Y.; Liu, X. Physics-Guided Spoof Trace Disentanglement for Generic Face Anti-Spoofing. arXiv 2020, 14, 1–16. Available online: https://arxiv.org/abs/2012.05185 (accessed on 12 November 2022).
+[P1396] List Paragraph | Jia, Y.; Zhang, J.; Shan, S.; Chen, X. Single-Side Domain Generalization for Face Anti-Spoofing. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Washington, DC, USA, 16–18 June 2020; pp. 8481–8490. [CrossRef]
+[P1397] List Paragraph | Saha, S.; Xu, W.; Kanakis, M.; Georgoulis, S.; Chen, Y.; Paudel, D.P.; Van Gool, L. Domain Agnostic Feature Learning for Image and Video Based Face Anti-spoofing. IEEE Comput. Soc. Conf. Comput. Vis. Pattern Recognit. Workshops 2020, 2020, 3490–3499. [CrossRef]
+[P1398] List Paragraph | Tu, X.; Ma, Z.; Zhao, J.; Du, G.; Xie, M.; Feng, J. Learning Generalizable and Identity-Discriminative Representations for Face Anti-Spoofing. ACM Trans. Intell. Syst. Technol. 2020, 11, 5. [CrossRef]
+[P1399] List Paragraph | Deb, D.; Jain, A.K. Look Locally Infer Globally: A Generalizable Face Anti-Spoofing Approach. IEEE Trans. Inf. Forensics Secur.
+[P1400] Normal | 2021, 16, 1143–1157. [CrossRef]
+[P1401] List Paragraph | Kotwal, K.; Bhattacharjee, S.; Abbet, P.; Mostaani, Z.; Wei, H.; Wenkang, X.; Yaxi, Z.; Marcel, S. Domain-Specific Adaptation of CNN for Detecting Face Presentation Attacks in NIR. IEEE Trans. Biom. Behav. Identit Sci. 2022, 4, 135–147. [CrossRef]
+[P1402] List Paragraph | Perez-Cabo, D.; Jimenez-Cabello, D.; Costa-Pazo, A.; Lopez-Sastre, R.J. Deep Anomaly Detection for Generalized Face Anti- Spoofing. IEEE Comput. Soc. Conf. Comput. Vis. Pattern Recognition. Work. 2019, 1591–1600. [CrossRef]
+[P1403] List Paragraph | Li, Z.; Li, H.; Lam, K.-Y.; Kot, A.C. Unseen Face Presentation Attack Detection with Hypersphere Loss. In Proceedings of the ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing, Barcelona, Spain, 4–8 May 2020; Volume 2020, pp. 2852–2856. [CrossRef]
+[P1404] List Paragraph | Koshy, R.; Mahmood, A. Enhanced Deep Learning Architectures for Face Liveness Detection for Static and Video Sequences.
+[P1405] Normal | Entropy 2020, 22, 1186. [CrossRef]
+[P1406] List Paragraph | Fatemifar, S.; Arashloo, S.R.; Awais, M.; Kittler, J. Client-specific anomaly detection for face presentation attack detection. Pattern Recognit. 2021, 112, 107696. [CrossRef]
+[P1407] List Paragraph | Nikisins, O.; Mohammadi, A.; Anjos, A.; Marcel, S. On Effectiveness of Anomaly Detection Approaches against Unseen Presentation Attacks in Face Anti-spoofing. In Proceedings of the 2018 International Conference on Biometrics, ICB, Gold Coast, Australia, 20–23 February 2018; pp. 75–81. [CrossRef]
+[P1408] List Paragraph | (empty)
+[P1409] Body Text | (empty)
+[P1410] Body Text | (empty)
+[P1411] List Paragraph | Baweja, Y.; Oza, P.; Perera, P.; Patel, V.M. Anomaly Detection-Based Unknown Face Presentation Attack Detection. In Proceedings of the IJCB 2020—IEEE/IAPR International Joint Conference on Biometrics, Houston, TX, USA, 28 September–1 October 2020. [CrossRef]
+[P1412] List Paragraph | Shao, R.; Perera, P.; Yuen, P.C.; Patel, V.M. Federated Generalized Face Presentation Attack Detection. Comput. Vis. Pattern Recognit. 2021, 14, 1–13. Available online: https://arxiv.org/abs/2104.06595 (accessed on 22 November 2022). [CrossRef]
+[P1413] List Paragraph | Nguyen, D.T.; Pham, T.D.; Batchuluun, G.; Noh, K.J.; Park, K.R. Presentation Attack Face Image Generation Based on a Deep Generative Adversarial Network. Sensors 2020, 20, 1810. [CrossRef] [PubMed]
+[P1414] List Paragraph | Liu, A.; Tan, Z.; Wan, J.; Liang, Y.; Lei, Z.; Guo, G.; Li, S.Z. Face Anti-Spoofing via Adversarial Cross-Modality Translation. IEEE Trans. Inf. Forensics Secur. 2021, 16, 2759–2772. [CrossRef]
+[P1415] List Paragraph | Wang, J.; Zhang, J.; Bian, Y.; Cai, Y.; Wang, C.; Pu, S. Self-Domain Adaptation for Face Anti-Spoofing. Proc. Conf. AAAI Artif. Intell.
+[P1416] Normal | 2021, 35, 2746–2754. [CrossRef]
+[P1417] List Paragraph | Jia, Y.; Zhang, J.; Shan, S. Dual-Branch Meta-Learning Network with Distribution Alignment for Face Anti-Spoofing. IEEE Trans. Inf. Forensics Secur. 2022, 17, 138–151. [CrossRef]
+[P1418] List Paragraph | Cai, R.; Li, Z.; Wan, R.; Li, H.; Hu, Y.; Kot, A.C. Learning Meta Pattern for Face Anti-Spoofing. IEEE Trans. Inf. Forensics Secur.
+[P1419] Normal | 2022, 17, 1201–1213. [CrossRef]
+[P1420] List Paragraph | Perez-Cabo, D.; Jimenez-Cabello, D.; Costa-Pazo, A.; Lopez-Sastre, R.J. Learning to Learn Face-PAD: A lifelong learning approach. In Proceedings of the 2020 IEEE International Joint Conference on Biometrics (IJCB), Houston, TX, USA, 28 September–1 October 2020; pp. 1–9. [CrossRef]
+[P1421] Body Text | (empty)
+[P1422] Normal | Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+================================================================================
+=== TABLES ===
+Table 0: 2 rows x 5 cols
+  Row0: Photo attack | Cut-photo | Replay attack | Flat print | Wrapped photo attack
+  Row1: (a) | (b) | (c) | (d) | (e)
+Table 1: 2 rows x 3 cols
+  Row0: 3D mask attack | Silicon Mask attack | 3D Model attack
+  Row1: (f) | (g) | (h)

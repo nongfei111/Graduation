@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用名称 -->
+    <string name="app_name">智能门铃</string>
+
+    <!-- 导航 -->
+    <string name="nav_home">首页</string>
+    <string name="nav_visitors">访客</string>
+    <string name="nav_members">成员</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 通用 -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="loading">加载中...</string>
+    <string name="no_data">暂无数据</string>
+    <string name="network_error">网络错误</string>
+
+    <!-- 登录 -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="forgot_password">忘记密码？</string>
+
+    <!-- 访客 -->
+    <string name="visitor">访客</string>
+    <string name="member">家人</string>
+    <string name="stranger">陌生人</string>
+    <string name="visit_time">访问时间</string>
+    <string name="confidence">相似度</string>
+
+    <!-- 控制 -->
+    <string name="unlock">开锁</string>
+    <string name="remote_unlock">远程开锁</string>
+    <string name="unlock_confirm">确定要远程开锁吗？</string>
+
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_confirm">确定要退出登录吗？</string>
+</resources>
